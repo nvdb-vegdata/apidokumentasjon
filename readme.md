@@ -37,7 +37,7 @@ NVDB API v1 er tilgjengelig på følgende adresse:
 >    [https://www.vegvesen.no/nvdb/api](https://www.vegvesen.no/nvdb/api)
 
 
-*   [Dokumentasjon for NVDB API v1](https://www.vegvesen.no/nvdb/apidokumentasjon/v1)
+*   [Dokumentasjon for NVDB API v1](/nvdb/apidokumentasjon/v1)
 
 
 ## Endringslogg
