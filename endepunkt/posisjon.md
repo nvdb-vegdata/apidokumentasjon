@@ -1,4 +1,7 @@
-# GET /posisjon
+---
+layout: page
+title: GET /posisjon
+---
 
 Tjeneste for å finne nærmeste veg til en gitt koordinat.
 

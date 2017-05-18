@@ -1,14 +1,17 @@
-# Nasjonal vegdatabank API
+---
+layout: page
+title: Nasjonal vegdatabank API
+---
 
 Statens vegvesen tilbyr et REST-basert API som kan benyttes for å få tilgang til informasjonen som befinner seg i Nasjonal vegdatabank (NVDB).
 
 ## Tips for å komme raskt igang
 
-1.  Besøk [Vegkart](https://www.vegvesen.no/vegkart/vegkart) for å få innblikk i hvilke data som er tilgjengelig.
+1.  Besøk [Vegkart](https://www.vegvesen.no/vegkart/vegkart){:target="_blank"} for å få innblikk i hvilke data som er tilgjengelig.
 2.  Les [Om Nasjonal vegdatabank](om_nvdb) for å bli kjent med NVDBs datastruktur.
 3.  Utforsk endepunktene i APIet gjennom nettleseren, og bli motivert til å fortsette.
 4.  Les [Bruk av NVDB API](retningslinjer) for å lære hvordan APIet er ment å brukes.
-5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client) som er skrevet som åpen kildekode.
+5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client){:target="_blank"} som er skrevet som åpen kildekode.
 
 ## NVDB API versjon 2
 

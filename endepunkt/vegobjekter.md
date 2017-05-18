@@ -1,4 +1,7 @@
-# GET /vegobjekter
+---
+layout: page
+title: GET /vegobjekter
+---
 
 Tjeneste for å søke etter vegobjekter i Nasjonal vegdatabank.
 

@@ -1,4 +1,7 @@
-# Bruk av NVDB API
+---
+layout: page
+title: Bruk av NVDB API
+---
 
 Retningslinjer for bruk av APIet.
 

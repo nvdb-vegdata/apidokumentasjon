@@ -1,4 +1,7 @@
-# GET /veg
+---
+layout: page
+title: GET /veg
+---
 
 Denne tjenesten kan brukes til å gjøre et oppslag på veglenkepoisjson eller vegreferanse, og få returnert det tilhørende punktet på vegnettet med både koordinat, vegreferanse og veglenkeposisjon.
 

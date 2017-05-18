@@ -1,6 +1,7 @@
-
-
-# Endringer
+---
+layout: page
+title: Endringer
+---
 
 Etter et initielt uttak er gjort kan man polle for endringer/slettinger.
 

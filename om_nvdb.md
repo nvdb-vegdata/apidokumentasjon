@@ -1,6 +1,7 @@
-
-
-# Om Nasjonal vegdatabank
+---
+layout: page
+title: Om Nasjonal vegdatabank
+---
 
 For å kunne ta i bruk NVDB API på en effektiv måte, er det en fordel å ha kunnskap om hvordan NVDBs datamodell er bygd opp.
 

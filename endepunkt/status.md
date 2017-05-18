@@ -1,8 +1,7 @@
-
-
-
-
-# GET /status
+---
+layout: page
+title: GET /status
+---
 
 Tjeneste for å hente ulike statusparametere om APIet.
 
