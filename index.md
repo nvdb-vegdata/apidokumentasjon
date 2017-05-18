@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Nasjonal vegdatabank API
+layout: default
+title: Hjem
 ---
 
 Statens vegvesen tilbyr et REST-basert API som kan benyttes for å få tilgang til informasjonen som befinner seg i Nasjonal vegdatabank (NVDB).
