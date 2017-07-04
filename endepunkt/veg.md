@@ -1,9 +1,10 @@
 ---
 layout: page
 title: GET /veg
+published: true
 ---
 
-Denne tjenesten kan brukes til å gjøre et oppslag på veglenkepoisjson eller vegreferanse, og få returnert det tilhørende punktet på vegnettet med både koordinat, vegreferanse og veglenkeposisjon.
+Denne tjenesten kan brukes til å gjøre et oppslag på veglenkeposijson eller vegreferanse, og få returnert det tilhørende punktet på vegnettet med både koordinat, vegreferanse og veglenkeposisjon.
 
 ## Finn punkt på vegnettet
 
@@ -16,9 +17,9 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg
 
 | Navn | Verdi | Beskrivelse |
 |:--------|:-------:|--------:|
-vegreferanse | [vegreferanse](#/verdi/vegreferanse) | Angir vegreferanse som punkt på vegnettet. |
-veglenke | [veglenke](#/verdi/veglenke) | Angir veglenke som punkt på vegnettet. |
-srid |  [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
+vegreferanse | [vegreferanse](verdi/vegreferanse) | Angir vegreferanse som punkt på vegnettet. |
+veglenke | [veglenke](/verdi/veglenke) | Angir veglenke som punkt på vegnettet. |
+srid |  [srid](/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
 
 `Vegreferanse` eller `veglenke` må oppgis.
 
@@ -159,5 +160,3 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg/batch?veglenker=0.0123456789@1234,0.
     "0.0123456789@1234245": null
 }
 ```
-
-
