@@ -1,4 +1,6 @@
-# GET /veg
+---
+title: GET /veg
+---
 
 Denne tjenesten kan brukes til å gjøre et oppslag på veglenkepoisjson eller vegreferanse, og få returnert det tilhørende punktet på vegnettet med både koordinat, vegreferanse og veglenkeposisjon.
 
@@ -11,34 +13,11 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg
 
 ### Parametere
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>vegreferanse</td>
-<td>[vegreferanse](#/verdi/vegreferanse)</td>
-<td>Angir vegreferanse som punkt på vegnettet.</td>
-</tr>
-<tr>
-<td>veglenke</td>
-<td>[veglenke](#/verdi/veglenke)</td>
-<td>Angir veglenke som punkt på vegnettet.</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-</tbody>
-</table>
-
+| Navn | Verdi | Beskrivelse |
+|:--------|:-------:|--------:|
+vegreferanse | [vegreferanse](verdi/vegreferanse) | Angir vegreferanse som punkt på vegnettet. |
+veglenke | [veglenke](/verdi/veglenke) | Angir veglenke som punkt på vegnettet. |
+srid |  [srid](/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
 `Vegreferanse` eller `veglenke` må oppgis.
 
 ### Send inn vegreferanse
@@ -204,5 +183,3 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg/batch?veglenker=0.0123456789@1234,0.
     "0.0123456789@1234245": null
 }
 ```
-
-
