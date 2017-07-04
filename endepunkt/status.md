@@ -24,30 +24,9 @@ GET https://www.vegvesen.no/nvdb/api/v2/status
 }
 ```
 
-<table>
-<thead>
-<tr>
-<th>Felt</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>datagrunnlag.sist_oppdatert</td>
-<td>Angir når datagrunnlaget sist ble hentet fra NVDB-databasen.</td>
-</tr>
-<tr>
-<td>datakatalog.id</td>
-<td>Angir id til aktiv datakatalog-versjon.</td>
-</tr>
-<tr>
-<td>datakatalog.versjon</td>
-<td>Angir versjonsnummer til aktiv datakatalog-versjon.</td>
-</tr>
-<tr>
-<td>datakatalog.dato</td>
-<td>Angir når den aktive versjonen av datakatalogen ble gyldig.</td>
-</tr>
-</tbody>
-</table>
-
+| Felt | beskrivelse |
+|:--------|:-------:|
+datagrunnlag.sist_oppdatert | Angir når datagrunnlaget sist ble hentet fra NVDB-databasen. |
+datakatalog.id | Angir id til aktiv datakatalog-versjon. |
+datakatalog.versjon | Angir versjonsnummer til aktiv datakatalog-versjon. |
+datakatalog.dato | Angir når den aktive versjonen av datakatalogen ble gyldig. |

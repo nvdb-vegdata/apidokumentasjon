@@ -44,31 +44,10 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader
 
 Alle endepunkt støtter følgende parametere.
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>inkluder</td>
-<td>kartutsnitt  
-senterpunkt  
-vegobjekt  
-alle</td>
-<td>En kommaseparert liste over informasjonselementer man vil hente ut for objektet. Det er ikke mulig å velge kartutsnitt eller senterpunkt for riksvegrute, kontraktsområde eller vegavdeling.</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-</tbody>
-</table>
+| Navn | Verdi | Beskrivelse |
+|:--------|:-------:|--------:|
+inkluder | kartutsnitt, senterpunkt, vegobjekt, alle | En kommaseparert liste over informasjonselementer man vil hente ut for objektet. Det er ikke mulig å velge kartutsnitt eller senterpunkt for riksvegrute, kontraktsområde eller vegavdeling. |
+srid | [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 ## Hent regioner
 

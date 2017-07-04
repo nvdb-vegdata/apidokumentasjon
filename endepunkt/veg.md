@@ -14,33 +14,11 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg
 
 ### Parametere
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>vegreferanse</td>
-<td>[vegreferanse](#/verdi/vegreferanse)</td>
-<td>Angir vegreferanse som punkt på vegnettet.</td>
-</tr>
-<tr>
-<td>veglenke</td>
-<td>[veglenke](#/verdi/veglenke)</td>
-<td>Angir veglenke som punkt på vegnettet.</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-</tbody>
-</table>
+| Navn | Verdi | Beskrivelse |
+|:--------|:-------:|--------:|
+vegreferanse | [vegreferanse](#/verdi/vegreferanse) | Angir vegreferanse som punkt på vegnettet. |
+veglenke | [veglenke](#/verdi/veglenke) | Angir veglenke som punkt på vegnettet. |
+srid |  [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
 
 `Vegreferanse` eller `veglenke` må oppgis.
 
@@ -119,37 +97,11 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg/batch
 
 ### Parametere
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>vegreferanser</td>
-<td>[vegreferanse](#/verdi/vegreferanse)  
-</td>
-<td>Angi en kommaseparert liste med vegreferanser på vegnettet.  
-</td>
-</tr>
-<tr>
-<td>veglenker</td>
-<td>[veglenke](#/verdi/veglenke)  
-</td>
-<td>Angi en kommaseparert liste med veglenker på vegnettet.  
-</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-</tbody>
-</table>
+| Navn | Verdi | Beskrivelse |
+|:--------|:-------:|--------:|
+vegreferanser | [vegreferanse](#/verdi/vegreferanse) | Angi en kommaseparert liste med vegreferanser på vegnettet. |  
+veglenker | [veglenke](#/verdi/veglenke) | Angi en kommaseparert liste med veglenker på vegnettet. |  
+srid |  [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 `Vegreferanser` eller `veglenker` må oppgis. De to parameterene kan ikke kombineres.
 

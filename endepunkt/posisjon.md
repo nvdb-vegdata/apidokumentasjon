@@ -13,74 +13,18 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon
 
 ### Parametere
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>nord</td>
-<td><flyttall></td>
-<td>Østlig koordinat</td>
-</tr>
-<tr>
-<td>ost</td>
-<td><flyttall></td>
-<td>Nordlig koordinat</td>
-</tr>
-<tr>
-<td>lat</td>
-<td><flyttall></td>
-<td>Breddegrad</td>
-</tr>
-<tr>
-<td>lon</td>
-<td><flyttall></td>
-<td>Lengdegrad</td>
-</tr>
-<tr>
-<td>maks_avstand</td>
-<td><heltall></td>
-<td>Angir søkeavstand i meter.  
-<span class="default">Default: 30</span></td>
-</tr>
-<tr>
-<td>maks_antall</td>
-<td><heltall></td>
-<td>Angir hvor mange resultater som maksimum skal returneres.  
-<span class="default">Default: 1</span></td>
-</tr>
-<tr>
-<td>konnekteringslenker</td>
-<td>true  
-false</td>
-<td>Angir om det skal returneres treff på konnekteringslenker.  
-<span class="default">Default: false</span></td>
-</tr>
-<tr>
-<td>detaljerte_lenker</td>
-<td>true  
-false</td>
-<td>Angir om det skal returneres treff på detaljerte vegnettsnivå.  
-<span class="default">Default: false</span></td>
-</tr>
-<tr>
-<td>vegreferanse</td>
-<td>[vegreferanse](#/verdi/vegreferanse)</td>
-<td>Angi om det kun skal søkes innenfor spesifikke vegreferanser</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-</tbody>
-</table>
+| Navn | Verdi | Beskrivelse |
+|:--------|:-------:|--------:|
+nord | flyttall | Østlig koordinat |
+ost |  flyttall | Nordlig koordinat |
+lat | flyttall |  Breddegrad |
+lon | flyttall | Lengdegrad |
+maks_avstand | heltall | Angir søkeavstand i meter. **Default: 30**|  
+| maks_antall | heltall | Angir hvor mange resultater som maksimum skal returneres. **Default: 1** |
+konnekteringslenker | boolsk | Angir om det skal returneres treff på konnekteringslenker. **Default: false** |
+detaljerte_lenker | boolsk | Angir om det skal returneres treff på detaljerte vegnettsnivå. **Default: false** |
+vegreferanse | [vegreferanse](#/verdi/vegreferanse) | Angi om det kun skal søkes innenfor spesifikke vegreferanser |
+srid | [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 Parameterne `nord`+`ost` eller `lat`+`lon` er obligatoriske.
 
