@@ -2,6 +2,6 @@
 * [Egenskapsfilter](egenskapsfilter.md)
 * [Endrigner](endringer.md)
 * [Lokasjonsfilter](lokasjonsfilter.md)
-* [Overlappfilter](overlappilter.md)
+* [Overlappfilter](overlappfilter.md)
 * [Paginering](paginering.md)
 * [Relasjonsfilter](relasjonsfilter.md)
