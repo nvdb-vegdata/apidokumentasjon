@@ -1,8 +1,3 @@
----
-layout: page
-title: GET /posisjon
-published: true
----
 
 Tjeneste for å finne nærmeste veg til en gitt koordinat.
 
@@ -24,7 +19,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon
 |maks_antall | heltall | Angir hvor mange resultater som maksimum skal returneres. **Default: 1** |
 |konnekteringslenker | boolsk | Angir om det skal returneres treff på konnekteringslenker. **Default: false** |
 |detaljerte_lenker | boolsk | Angir om det skal returneres treff på detaljerte vegnettsnivå. **Default: false** |
-|vegreferanse | [vegreferanse](#/verdi/vegreferanse) | Angi om det kun skal søkes innenfor spesifikke vegreferanser |
+|vegreferanse | [vegreferanse](#/verdi/vegreferanse) | Angi om det kun skal søkes innenfor spesifikke |vegreferanser |
 |srid | [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 Parameterne `nord`+`ost` eller `lat`+`lon` er obligatoriske.
