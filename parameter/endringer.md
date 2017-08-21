@@ -1,13 +1,9 @@
----
-layout: page
-title: Endringer
----
 
 Etter et initielt uttak er gjort kan man polle for endringer/slettinger.
 
 ## Nye/oppdaterte objekter
 
-For å finne nye/oppdaterte objekter kan du bruke områdefilter på samme måte som ved objektsøk. 
+For å finne nye/oppdaterte objekter kan du bruke områdefilter på samme måte som ved objektsøk.
 
 **NB! Egenskapsfilteret støttes ikke.**
 

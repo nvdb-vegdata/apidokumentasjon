@@ -1,7 +1,3 @@
----
-layout: page
-title: GET /vegnett
----
 
 Tjeneste for å hente det topologiske vegnettverket fra NVDB.
 

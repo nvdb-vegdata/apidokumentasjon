@@ -1,7 +1,3 @@
----
-layout: page
-title: Overlappfilter
----
 
 Ved hjelp av et overlappfilter er det mulig å søke frem vegobjekter som befinner seg på samme sted på vegnettet som andre angitte vegobjekttyper.
 
@@ -57,4 +53,3 @@ Overlappfiltre kombineres alltid med `AND`.
 ```
 https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?egenskap="5074=6429"&overlapp=105(2021=2738)&overlapp=67
 ```
-

@@ -1,7 +1,3 @@
----
-layout: page
-title: Områdefilter
----
 
 Ved hjelp av områdefilter er det mulig å velge hvilke områder det skal søkes innenfor.
 

@@ -1,7 +1,3 @@
----
-layout: page
-title: Vegreferanse
----
 
 Vegreferanse er et lineært referansesystem som brukes til stedfesting av vegobjekter og administrativ klassifisering av vegnettet.
 

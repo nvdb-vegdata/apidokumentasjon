@@ -1,7 +1,3 @@
----
-layout: page
-title: Bruk av NVDB API
----
 
 Retningslinjer for bruk av APIet.
 
@@ -21,8 +17,8 @@ Det er ikke nødvendig å registrere en bruker for å bruke APIet til å lese da
 
 
 ```
-	"X-Client": "NVDB Rapporter" 
-    "X-Kontaktperson": "ola@nordmann.no"
+	"X-Client": "NVDB Rapporter"
+  "X-Kontaktperson": "ola@nordmann.no"
 ```
 
 ## Responsformater

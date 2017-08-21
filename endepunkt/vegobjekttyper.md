@@ -1,7 +1,3 @@
----
-layout: page
-title: GET /vegobjekttyper
----
 
 Tjeneste for å vise innholdet i NVDBs metadatakatalog, Datakatalogen.
 

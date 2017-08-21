@@ -1,7 +1,3 @@
----
-layout: page
-title: Geometri
----
 
 Vegobjekter i NVDB har en geografisk stedfesting, som beskrives på en standardisert måte.
 
@@ -116,4 +112,3 @@ Legg merke til at `srid`-parameteren både gjelder kartutsnitt og returnert geom
 
 Geometrien som returneres _kan_ inneholde høydeverdi. Høydedatum for disse er **NN54**
 3D Geometrier prefikses med Z ihht WKT spesifikasjonen, for eksempel 'POINT Z(...), 'MULTILINESTRING Z(...)'
-

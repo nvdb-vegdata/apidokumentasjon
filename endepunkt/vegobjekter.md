@@ -1,7 +1,4 @@
----
-layout: page
-title: GET /vegobjekter
----
+
 
 Tjeneste for å søke etter vegobjekter i Nasjonal vegdatabank.
 
@@ -209,7 +206,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?inkluder=metadata,egenska
         ...
     ],
     "metadata": {
-        
+
     }
 }
 ```

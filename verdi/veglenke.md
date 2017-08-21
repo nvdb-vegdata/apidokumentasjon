@@ -1,7 +1,3 @@
----
-layout: page
-title: Veglenke
----
 
 Vegleker er an av bestanddelene i NVDBs topologisk vegnettverk.
 

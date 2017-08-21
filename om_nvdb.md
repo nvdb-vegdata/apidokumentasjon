@@ -1,7 +1,4 @@
----
-layout: page
-title: Om Nasjonal vegdatabank
----
+
 
 For å kunne ta i bruk NVDB API på en effektiv måte, er det en fordel å ha kunnskap om hvordan NVDBs datamodell er bygd opp.
 
@@ -56,8 +53,8 @@ Et vegobjekt har en unik id, en unik url, og er av en bestemt vegobjekttype.
     }
 }
 ```
-    
-    
+
+
 
 ### Egenskaper
 

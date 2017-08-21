@@ -1,7 +1,3 @@
----
-layout: page
-title: GET /omrader
----
 
 I NVDB er vegobjekter og vegnett stedfestet til flere typer områder, som kan brukes til å avgrense søk. For å gjøre det enklere å bygge opp dynamiske spørringer mot APIet, tilbys det her en tjeneste for å hente ut en liste over alle områder, for hver områdetype.
 
@@ -107,7 +103,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/fylker
         "nummer": 3,
         "region": 1
     },
-    
+
     ...
 ]
 ```

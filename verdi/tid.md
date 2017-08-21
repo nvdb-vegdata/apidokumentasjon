@@ -1,7 +1,3 @@
----
-layout: page
-title: Tid i NVDB-apiet
----
 
 ## Tid som parameter
 
