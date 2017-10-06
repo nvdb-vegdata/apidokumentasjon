@@ -1,3 +1,7 @@
+---
+title: Endringer
+category: Parameter
+---
 
 Etter et initielt uttak er gjort kan man polle for endringer/slettinger.
 

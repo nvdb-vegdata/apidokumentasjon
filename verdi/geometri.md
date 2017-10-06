@@ -1,3 +1,6 @@
+---
+title: Geometri
+---
 
 Vegobjekter i NVDB har en geografisk stedfesting, som beskrives på en standardisert måte.
 

@@ -1,3 +1,7 @@
+---
+title: Retningslinjer
+order: 3
+---
 
 Retningslinjer for bruk av APIet.
 

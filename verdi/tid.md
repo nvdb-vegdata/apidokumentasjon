@@ -1,3 +1,6 @@
+---
+title: Tid
+---
 
 ## Tid som parameter
 

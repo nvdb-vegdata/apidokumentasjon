@@ -1,3 +1,7 @@
+---
+title: Paginering
+category: Parameter
+---
 
 Spørringer mot NVDB API kan potensielt returnere et stort antall objekter. For å begrense belastningen på APIet, og samtidig unngå store responser, legges det opp til at brukere benytter paginering til å laste ned store resultatsett.
 

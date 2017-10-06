@@ -1,3 +1,7 @@
+---
+title: Posisjon
+category: endepunkt
+---
 
 Tjeneste for å finne nærmeste veg til en gitt koordinat.
 

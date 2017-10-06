@@ -1,3 +1,6 @@
+---
+title: Status
+---
 
 
 Tjeneste for å hente ulike statusparametere om APIet.

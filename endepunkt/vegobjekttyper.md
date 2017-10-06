@@ -1,3 +1,7 @@
+---
+title: Vegobjekttyper
+category: endepunkt
+---
 
 Tjeneste for å vise innholdet i NVDBs metadatakatalog, Datakatalogen.
 

@@ -1,3 +1,6 @@
+---
+title: Avanserte filtre
+---
 API-et kan utføre komplekse spørringer som filtrerer på relaterte objekter og objekter som overlapper hverandre. For å spesifisere spørringer med avansert funksjonalitet benyttes et enkelt spørrespråk. Dette spørrespråket er støttet i [https://www.vegvesen.no/nvdb/api/v2/vegobjekter](#/get/vegobjekter) endepunktet.
 
 Avanserte spørringer må brukes dersom man vil utføre spørringer som involverer flere objekttyper. API-et støtter filtrering på objekter som overlapper hverandre:

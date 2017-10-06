@@ -1,3 +1,7 @@
+---
+title: Relasjonsfilter
+category: Parameter
+---
 
 Ved hjelp av et relasjonsfilter er det mulig å søke frem vegobjekter som har relasjon til andre angitte vegobjekttyper.
 

@@ -1,0 +1,250 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background: #f7f7f7;
+}
+
+
+.container {
+  max-width: 65em; 
+  overflow: auto;
+  margin: 5em auto;
+  padding: 5em;
+  border-top: 5px solid #58b02c;
+  background: #fff;
+  box-shadow: 0 0 20px #eee;
+}
+
+nav {
+  width: 17em; 
+  margin: 0 3em 0 0;
+  float: left;
+}
+
+main {
+  display: block;
+  /* width: 45em; */
+  width: calc(100% - 20em);
+  float: left;
+}
+
+@media (max-width: 48em) {
+
+  .container {
+    width: auto;
+    margin-top: 0;
+    padding: 2em;
+  }
+  
+  nav {
+    float: none;
+    width: auto;
+    margin-top: 0;
+  }
+  
+  main {
+    float: none;
+    width: auto;
+    margin-top: 0;
+  }
+
+
+}
+
+
+a {
+  color: #008ec2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00BBFF;
+}
+
+
+h1, h2, h3, h4 {
+  margin: 2em 0 0.5em 0;
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+nav h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1.1em 0;
+  line-height: 1.7;
+}
+
+.ingress {
+  font-size: 1.6rem;
+}
+
+ul, ol {
+  margin: 1em 0 1em 2em;
+}
+
+nav ul {
+  margin: 0 0 2em 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 0 0.5em 0;
+}
+
+ul a, ol a {
+  border: 0;
+}
+
+dl {
+  overflow: auto;
+  margin: 1em 0 1em 0;
+}
+
+dl:last-child {
+  margin-bottom: 0;
+}
+
+dt {
+  margin: 0 0.5em 0 0;
+  float: left;
+  font-weight: 600;
+}
+
+dd {
+  margin: 0 0 0.5em 0;
+}
+
+.aktiv {
+  font-weight: 600;
+  color: #444;
+}
+
+.default {
+  color: #58b02c;
+}
+
+.betinget {
+  color: #ff9600;
+}
+
+.obligatorisk {
+  color: #da291c;
+}
+
+.tips, .spm, .nb {
+  margin: 1.5em 0;
+  padding: 1em;
+  font-size: 1.3rem;
+}
+
+.tips {
+  border: 1px solid #D7FFAB;
+  background: #FFFFF8;
+}
+
+.spm {
+  border: 1px solid #FFFF99;
+  background: #FFFFE5;
+}
+
+.nb {
+  border: 1px solid #FFA89B;
+  background: #FFF5E8;
+}
+
+pre {
+  margin: 0 0 1em 0;
+  padding: 1em;
+  border: 1px solid #eee;
+  background: #f7f7f7;
+  font-size: 1.3rem;
+}
+
+:not(pre) > code {
+  padding: 0.2em;
+  border: 1px solid #eee;
+  background: #f7f7f7;
+  font-size: 1.3rem;
+}
+
+code {
+  font-family: consolas, monospace;
+}
+
+dt code {
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 1.1em 0;
+  border-collapse: collapse;
+  font-size: 1.3rem;
+}
+
+th, td {
+  padding: 0.7em 2em 0.7em 0;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+th {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+th:last-child, td:last-child {
+  padding-right: 0;
+}
+
+.stcode code {
+  display: block;
+  margin: 1em 0 1em 0;
+}
+
+.stcode code.inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+abbr {
+  border-bottom: 1px dotted #444;
+}

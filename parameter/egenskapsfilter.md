@@ -1,3 +1,7 @@
+---
+title: Egenskapsfilter
+category: Parameter
+---
 
 Ved hjelp av et egenskapsfilter er det mulig å søke frem vegobjekter etter hvilke egenskaper de har.
 

@@ -1,3 +1,7 @@
+---
+title: Lokasjonsfilter
+category: Parameter
+---
 
 Ved hjelp av områdefilter er det mulig å velge hvilke områder det skal søkes innenfor.
 

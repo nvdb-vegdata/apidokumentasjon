@@ -1,3 +1,7 @@
+---
+title: Veg
+category: endepunkt
+---
 
 Denne tjenesten kan brukes til å gjøre et oppslag på veglenkeposijson eller vegreferanse, og få returnert det tilhørende punktet på vegnettet med både koordinat, vegreferanse og veglenkeposisjon.
 

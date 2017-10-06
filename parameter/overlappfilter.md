@@ -1,3 +1,7 @@
+---
+title: Overlappfilter
+category: Parameter
+---
 
 Ved hjelp av et overlappfilter er det mulig å søke frem vegobjekter som befinner seg på samme sted på vegnettet som andre angitte vegobjekttyper.
 

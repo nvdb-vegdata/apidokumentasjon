@@ -1,3 +1,7 @@
+---
+title: Vegobjekter
+category: endepunkt
+---
 
 
 Tjeneste for å søke etter vegobjekter i Nasjonal vegdatabank.
