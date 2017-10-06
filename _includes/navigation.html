@@ -14,7 +14,7 @@
 {% assign items = cat.items | sort: 'order' %}
 {% for node in items | sort: 'order' %}
 {% unless node.hide %}
-<li><a href='{{node.url}}'>{{node.title}}</a></li>
+<li><a href='{{site.baseurl}}{{node.url}}'>{{node.title}}</a></li>
 {% endunless %}
 {% endfor %}
 </ul>
