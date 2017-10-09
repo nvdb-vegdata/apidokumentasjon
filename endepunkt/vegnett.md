@@ -1,7 +1,4 @@
----
-title: Vegnett
-category: endepunkt
----
+## Vegnett
 
 Tjeneste for å hente det topologiske vegnettverket fra NVDB.
 
