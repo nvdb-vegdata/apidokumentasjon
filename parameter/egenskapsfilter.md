@@ -31,7 +31,7 @@ Det er støtte for følgende operatorer:
 <li><b>></b> - mindre enn,
 <li><b>>=</b> - større enn, eller lik
 <li><b><=</b> - mindre enn, eller lik
-</dl>
+</ul>
 
 Større enn- og mindre enn-operatorene er kun relevant for egenskapstyper av type tall eller dato.
 

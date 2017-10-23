@@ -15,35 +15,12 @@ For å finne nye/oppdaterte objekter kan du bruke områdefilter på samme måte 
 
 Selv om ingen av to tidsparameterene er obligatoriske må brukeren inkludere <emph>minst én</emph> av dem for å gjøre et gyldig søk.
 
-<table>
-<thead>
-<tr>
-<th>Felt</th>
-<th>Format</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>antall</td>
-<td><nummer></td>
-<td>Angir hvor mange objekter som skal returneres. Se [bruk](#/retningslinjer#Pagination) for hvordan paginering virker.  
-</td>
-</tr>
-<tr>
-<td>etter</td>
-<td>[Tidsformat](#/tid)</td>
-<td>Denne parameteren brukes til å definere siden <emph>når</emph> man vil finne endringer.  
-Obligatorisk</td>
-</tr>
-<tr>
-<td>kun_objekt</td>
-<td>true  
-false</td>
-<td>Dersom brukeren er interessert i å finne endringer kun blant egenskaper og assosiasjoner settes denne parameteren til true. Default: false</td>
-</tr>
-</tbody>
-</table>
+| Felt | Format | Beskrivelse |
+| --- | --- | --- |
+| antall | nummer | Angir hvor mange objekter som skal returneres. Se [bruk](#/retningslinjer#Pagination) for hvordan paginering virker. |
+| etter | [Tidsformat](#/tid) | Denne parameteren brukes til å definere siden <emph>når</emph> man vil finne endringer. Obligatorisk |
+| kun_objekt | true/false | Dersom brukeren er interessert i å finne endringer kun blant egenskaper og assosiasjoner settes denne parameteren til true. Default: false |
+
 
 ### Eksempel
 
@@ -82,29 +59,10 @@ Slettede objekter vil være fullstendig vasket vekk fra NVDB og ingen informasjo
 
 ### Ekstra parametere
 
-<table>
-<thead>
-<tr>
-<th>Felt</th>
-<th>Format</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>antall</td>
-<td><nummer></td>
-<td>Angir hvor mange objekter som skal returneres. Se [bruk](#/retningslinjer#Pagination) for hvordan paginering virker.  
-</td>
-</tr>
-<tr>
-<td>etter</td>
-<td>[Tidsformat](#/tid)</td>
-<td>Sett tidsbegrensing på søket.  
-<span class="obligatorisk">Obligatorisk</span></td>
-</tr>
-</tbody>
-</table>
+| Felt | Format |Beskrivelse | 
+| --- | --- | --- |
+| antall | nummer | Angir hvor mange objekter som skal returneres. Se [bruk](#/retningslinjer#Pagination) for hvordan paginering virker. |
+| etter | [Tidsformat](#/tid) | Sett tidsbegrensing på søket. Obligatorisk |
 
 ### Eksempel
 

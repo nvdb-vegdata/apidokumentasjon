@@ -45,12 +45,12 @@ For europa-, riks- og fylkesveger er kommunenummeret alltid 0.</td>
 <td>kategori</td>
 <td>Angir vegkategori.
 <ul>
-<li><b>E</b> - Europaveg<>
-<li><b>R</b> - Riksveg<>
-<li><b>F</b> - Fylkesveg<>
-<li><b>K</b> - Kommunal veg<>
-<li><b>P</b> - Privat veg<>
-<li><b>S</b> - Skogsbilveg<>
+<li><b>E</b> - Europaveg</li>
+<li><b>R</b> - Riksveg</li>
+<li><b>F</b> - Fylkesveg</li>
+<li><b>K</b> - Kommunal veg</li>
+<li><b>P</b> - Privat veg</li>
+<li><b>S</b> - Skogsbilveg</li>
 </dl>
 </td>
 </tr>
@@ -58,20 +58,20 @@ For europa-, riks- og fylkesveger er kommunenummeret alltid 0.</td>
 <td>status</td>
 <td>Angir vegstatus.
 <ul>
-<li><b>V</b> - Eksisterende veg<>
-<li><b>W</b> - Midlertidig veg<>
-<li><b>T</b> - Midlertidig status bilveg<>
-<li><b>S</b> - Eksisterende ferjestrekning<>
-<li><b>G</b> - Gang-/sykkelveg<>
-<li><b>U</b> - Midlertidig status gang-/sykkelveg<>
-<li><b>B</b> - Beredskapsveg<>
-<li><b>M</b> - Serviceveg<>
-<li><b>X</b> - Rømningstunnel<>
-<li><b>A</b> - Anleggsveg<>
-<li><b>H</b> - Gang-/sykkelveg anlegg<>
-<li><b>P</b> - Vedtatt veg<>
-<li><b>E</b> - Vedtatt ferjestrekning<>
-<li><b>Q</b> - Vedtatt gang-/sykkelveg<>
+<li><b>V</b> - Eksisterende veg</li>
+<li><b>W</b> - Midlertidig veg</li>
+<li><b>T</b> - Midlertidig status bilveg</li>
+<li><b>S</b> - Eksisterende ferjestrekning</li>
+<li><b>G</b> - Gang-/sykkelveg</li>
+<li><b>U</b> - Midlertidig status gang-/sykkelveg</li>
+<li><b>B</b> - Beredskapsveg</li>
+<li><b>M</b> - Serviceveg</li>
+<li><b>X</b> - Rømningstunnel</li>
+<li><b>A</b> - Anleggsveg</li>
+<li><b>H</b> - Gang-/sykkelveg anlegg</li>
+<li><b>P</b> - Vedtatt veg</li>
+<li><b>E</b> - Vedtatt ferjestrekning</li>
+<li><b>Q</b> - Vedtatt gang-/sykkelveg</li>
 </dl>
 </td>
 </tr>
@@ -83,12 +83,12 @@ For europa-, riks- og fylkesveger er kommunenummeret alltid 0.</td>
 <td>hp</td>
 <td>Angir parsell.
 <ul>
-<li><b>1–49</b> - Hovedparseller<>
-<li><b>50–69</b> - Armer<>
-<li><b>70–199</b> - Ramper<>
-<li><b>400–599</b> - Rundkjøringer<>
-<li><b>600–699</b> - Skjøteparseller<>
-<li><b>800–998</b> - Trafikklommer, rasteplasser<>
+<li><b>1–49</b> - Hovedparseller</li>
+<li><b>50–69</b> - Armer</li>
+<li><b>70–199</b> - Ramper</li>
+<li><b>400–599</b> - Rundkjøringer</li>
+<li><b>600–699</b> - Skjøteparseller</li>
+<li><b>800–998</b> - Trafikklommer, rasteplasser</li>
 </dl>
 </td>
 </tr>

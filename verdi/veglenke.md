@@ -25,59 +25,16 @@ Vegobjekters stedfesting til det topologiske vegnettverket angis ved å oppgi en
 }
 ```
 
-<table>
-<thead>
-<tr>
-<th>Felt</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>Angir veglenkens unike id.</td>
-</tr>
-<tr>
-<td>posisjon</td>
-<td>Angir relativ posisjon på veglenken. Flyttall mellom 0 og 1.</td>
-</tr>
-<tr>
-<td>sideposisjon</td>
-<td>
-Angir posisjon i forhold til vegens senterlinje:
-<ul>
-<li><b>V</b> - Til venstre
-<li><b>H</b> - Til høyre
-<li><b>M</b> - I midten av vegen
-<li><b>K</b> - Krysser vegen
-<li><b>MV</b> - Til venstre på midtrabatt
-<li><b>MH</b> - Til høyre på midtrabatt
-<li><b>VT</b> - I avkjørsel til venstre
-<li><b>HT</b> - I avkjørsel til høyre
-<li><b>R0</b> - På øy i rundkjøring
-<li><b>L</b> - Langs vegen
-</ul>
-</td>
-</tr>
-<tr>
-<td>felt</td>
-<td>Angir eventuell stedfesting til felt</td>
-</tr>
-<tr>
-<td>retning</td>
-<td>Angir stedfesting i forhold til veglenkens retning.
-<ul>
-<li><b>MED</b> - Stedfesting med veglenken
-<li><b>MOT</b> - Stedfesting mot veglenken
-</ul>
-</td>
-</tr>
-<tr>
-<td>kortform</td>
-<td>Sammenslått versjon av veglenkeposisjonen.</td>
-</tr>
-</tbody>
-</table>
+| Felt | Beskrivelse |
+| --- | --- |
+| id | Angir veglenkens unike id. | 
+| posisjon | Angir relativ posisjon på veglenken. Flyttall mellom 0 og 1. | 
+| sideposisjon | Angir posisjon i forhold til vegens senterlinje:  <ul><li><b>V</b> - Til venstre</li><li><b>H</b> - Til høyre</li><li><b>M</b> - I midten av vegen</li><li><b>K</b> - Krysser vegen</li><li><b>MV</b> - Til venstre på midtrabatt</li><li><b>MH</b> - Til høyre på midtrabatt</li><li><b>VT</b> - I avkjørsel til venstre</li><li><b>HT</b> - I avkjørsel til høyre</li><li><b>R0</b> - På øy i rundkjøring</li><li><b>L</b> - Langs vegen</li></ul>|
+| felt | Angir eventuell stedfesting til felt | 
+| retning | Angir stedfesting i forhold til veglenkens retning. <ul><li><b>MED</b> - Stedfesting med veglenken</li><li><b>MOT</b> - Stedfesting mot veglenken</ul>| 
+| kortform | Sammenslått versjon av veglenkeposisjonen. |
+
+
 
 ### Eksempel: Strekning
 

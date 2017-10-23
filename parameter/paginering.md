@@ -7,27 +7,11 @@ Spørringer mot NVDB API kan potensielt returnere et stort antall objekter. For 
 
 ## Parametere
 
-<table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>antall</td>
-<td><heltall></td>
-<td>Angir hvor mange objekter som skal returneres.</td>
-</tr>
-<tr>
-<td>start</td>
-<td><tekst></td>
-<td>Angir markør for hvilke objekter som skal returneres.</td>
-</tr>
-</tbody>
-</table>
+| Navn | Verdi | Beskrivelse |
+| --- | --- | --- |
+| antall | heltall | Angir hvor mange objekter som skal returneres. | 
+| start | tekst | Angir markør for hvilke objekter som skal returneres. |
+
 
 Øvre grense for `antall` er avhengig av størrelse på respons, og vil kunne variere fra endepunkt til endepunkt. Dersom det angis en verdi for antall som overskrider maksimum, vil maksimumsverdien benyttes.
 
