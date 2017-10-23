@@ -37,6 +37,7 @@ Vegobjekters stedfesting til det topologiske vegnettverket angis ved å oppgi en
     </tr>
 </table>
 
+
 ### Eksempel: Strekning
 
 For strekningsobjekter angis det to posisjoner på en veglenke.
