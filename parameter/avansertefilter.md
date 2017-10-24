@@ -91,20 +91,62 @@ https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, egens
 
 API-et kan også filtrere på objekter som er stedfestet på samme sted i vegnettet. Dette gjøres i _overlapp_-parameteren.
 
-Overlappfilter er et egenskapsfilter som beskrevet over men som gjelder for en annen objekttype enn den som er angitt i endepunktet. Hvis man vil finne alle Trafikkulykker (570) på strekninger med Fartsgrense (105) lik 80 km/t så blir spørringen slik:
-
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/571?overlapp="105(egenskap(2021)=2738)"
+?overlapp=<objekttypeid>
 ```
 
+### Eksempel: Trafikkulykker på samme sted som tunnelløp
 
-Flere overlappfiltere kan spesifiseres ved å angi API parameterene flere ganger. Hvis man vil finne trafikkulykker på strekninger med fartsgrense 80 og ÅDT over 2000 blir spørringen slik: `https://www.vegvesen.no/nvdb/api/v2/vegobjekter/571?overlapp="105(egenskap(2021)=2738)"&overlapp="540(egenskap(4623)>=2000)"`
+```
+https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?overlapp=67
+```
+
+
+## Overlapp med egenskapsfilter
+
+Overlappfilter kan kombineres med egenskapsfilter. Både for vegobjekttypen det spørres etter, og vegobjekttypen det overlappes med.
+
+Egenskapsfilter til vegobjekttypen det skal overlappes med, angis innenfor en parentes, rett etter vegobjektypeid.
+
+```
+?overlapp=<objekttypeid>(<egenskapsfilter>)
+```
+
+
+### Eksempel: Trafikkulykker på samme sted som fartsgrense lik 80 km/t
+
+```
+https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?overlapp=105(2021=2738)
+```
+
+
+### Eksempel: Trafikkulykker med alvorlig skaffe personer på samme sted som fartsgrense lik 80 km/t
+
+```
+https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?egenskap="5074=6429"&overlapp=105(2021=2738)
+```
+
+
+
+## Kombinasjon av flere overlappfiltre
+
+Overlappsfiltre kan kombineres ved å oppgi flere `overlapp`-parametere i samme spørring.
+
+Overlappfiltre kombineres alltid med `AND`.
+
+### Eksempel: Trafikkulykker med alvorlig skaffe personer på samme sted som et tunnelløp og fartsgrense lik 80 km/t
+
+```
+https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?egenskap="5074=6429"&overlapp=105(2021=2738)&overlapp=67
+```
+
 
 _overlapp_ trenger ikke inneholde egenskapsfilter. For å angi at alle objekter som overlapper med hovedobjektet skal returneres uten ytterlige filtrering:
 
 ```
 https://www.vegvesen.no/nvdb/api/v2/vegobjekter/571?overlapp="105(egenskap(2021)=2738)"&overlapp=540
 ```
+
 
 ## API Parametere
 
