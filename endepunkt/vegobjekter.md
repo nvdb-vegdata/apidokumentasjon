@@ -644,6 +644,12 @@ slettet</td>
 </tbody>
 </table>
 
+De objektene som returneres med `type=endret` er de som har `sist_modifisert` etter oppgitt dato. `sist_modifisert` blir 
+beregnet ved lesing fra NVDB. 
+Per oktober 2017 blir `sist_modifisert` av og til oppdatert selv om det ikke er synlige forskjeller mellom ny og gammel
+versjon. 
+I fremtiden vil `sist_modifisert` kun oppdateres dersom det er forskjeller i det objektet som returneres i responsen. 
+
 Vær oppmerksom på at også dette endepunktet benytter [paginering](#/parameter/paginering). I responsksemplene er konvolutten med metadata utelatt.
 
 Områdefilter og egenskapsfilter er _ikke_ støttet for dette endepunktet.
@@ -653,8 +659,8 @@ Områdefilter og egenskapsfilter er _ikke_ støttet for dette endepunktet.
 ```json
 [
     {
-        'type': "ENDRET",
-        'vegobjekt': {
+        "type": "ENDRET",
+        "vegobjekt": {
             ...
         }
     }
@@ -667,8 +673,8 @@ Områdefilter og egenskapsfilter er _ikke_ støttet for dette endepunktet.
 ```json
 [
     {
-        'type': "SLETTET",
-        'vegobjekt': 1235415
+        "type": "SLETTET",
+        "vegobjekt": 1235415
     }
 ]
 ```
