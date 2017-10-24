@@ -32,7 +32,9 @@ Denne API dokumentasjonen inneholder oversikt over:
 
 ## NVDB API versjon 1
 
-**Versjon 1** er forrige versjon av APIet. Versjonen er fortsatt tilgjengelig, men vil på sikt utfases.
+**Versjon 1** er forrige versjon av APIet. Versjonen er fortsatt tilgjengelig, men vil på sikt utfases. 
+
+**Foreløpig sluttdato for støtte for versjon 1 er 1. juni 2018** 
 
 Det legges ikke til ny funksjonalitet i versjon 1 av APIet, og brukere oppfordres til å gå over til versjon 2 så snart som mulig.
 
