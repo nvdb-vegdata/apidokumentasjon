@@ -106,13 +106,14 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/105
     "sosinavn": "Fartsgrense",
     "sosinvdbnavn": "Fartsgrense_105",
     "sorteringsnummer": 0,
-    "egenskapstyper": [],
-    "relasjonstyper": [],
-    "styringsparametere": {}
+    "kategorier": [ ... ], 
+    "egenskapstyper": [ ... ],
+    "relasjonstyper": [ ... ],
+    "styringsparametere": { ... }
 }
 ```
 
-
+Dersom ingen `inkluder`-parameter er definert vil all informasjon returneres. Dette tilsvarer `inkluder=alle`.
 Egenskapstyper, relasjonstyper og styringsparametere er nærmere beskrevet i avsnittene som følger.
 
 ## Beskrivelse av egenskapstyper
@@ -431,3 +432,47 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/datatyper
 |datatype|Datatypens navn:<br>`Tekst` - Eksempel: _Strindheimtunnelen_<br>`Tall` - Eksempel: _86_<br>`Flyttall` - Eksempel: _86.0_<br>`Kortdato` - Eksempel: Måned-dag, _01-01_<br>`Dato` - Eksempel: År-Måned-dag, _2015-01-01_<br>`Klokkeslett` - Eksempel: _13:37_<br>`Geometri` - Geometrirepresentasjon<br>`Struktur` - Verdi sammensatt av flere verdier<br>`Binærobjekt` - Eksempel: Et dokument eller et bilde<br>`Boolean` - _True_ eller _false_<br>`Liste` - En liste av objekter|
 |kortnavn|Forkortet navn|
 |beskrivelse|Tekstlig beskrivelse|
+
+## Hent liste over kategorier
+
+På dette endepunktet listes alle kategoriene en vegobjekttype kan være i.
+
+```
+GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/kategorier
+```
+
+```json
+[
+    {
+        "id" : 38,
+        "navn" : "Alle",
+        "kortnavn" : "alle",
+        "sorteringsnummer" : 1,
+        "beskrivelse" : "Inneholder ale vegobjekttyper",
+        "startdato" : "2012-05-22"
+    }, {
+        "id" : 43,
+        "navn" : "Vegreferansesystem",
+        "sorteringsnummer" : 3,
+        "beskrivelse" : "Inneholder vegobjekttyper som har med vegreferansesystemet å gjøre",
+        "startdato" : "2012-05-22"
+    }, {
+        "id" : 1,
+        "navn" : "Vegsystem",
+        "kortnavn" : "vgsy",
+        "sorteringsnummer" : 5,
+        "beskrivelse" : "Inneholder vegobjekttyper som har med selve vegsystemet å gjøre, eksempel  kan være kryss, vegstrekning, plasser, avkjørsler etc.",
+        "startdato" : "2012-05-22"
+    },
+    ...
+]
+```
+
+|Felt|Beskrivelse|
+|:-|:-|
+|id|Kategoriens id|
+|navn|Kategoriens navn|
+|kortnavn|Forkortet navn|
+|sorteringsnummer|Sorteringsnummer fra datakatalogen|
+|beskrivelse|Tekstlig beskrivelse|
+|startdato|Når gjelder kategorien fra|
