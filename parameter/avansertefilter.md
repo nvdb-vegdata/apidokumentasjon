@@ -113,7 +113,7 @@ I tillegg til de ordinære API parameterene på [https://www.vegvesen.no/nvdb/ap
 <table>
 <tbody>
 <tr>
-<td>_overlapp_</td>
+<td><em>overlapp</em></td>
 <td>Filtrering på objekter som overlapper, tar et overlappfilter som parameter. F.eks. 105 eller 105(egenskap(2021)=2741)</td>
 </tr>
 </tbody>
@@ -128,14 +128,14 @@ Spørrestråket består av hovedsakelig to funksjoner med AND og OR mellom. Data
 <table>
 <tbody>
 <tr>
-<td>_egenskaper_</td>
+<td><em>egenskaper</em></td>
 <td>
 Filtrering på egenskaper, tar en egenskapstype ID som parameter.
 `egenskap(2021) = 2738`
 </td>
 </tr>
 <tr>
-<td>_relasjon_</td>
+<td><em>relasjon</em></td>
 <td>
 Filtrering på datter objekter, første parameter er type ID til relatert objekt, andre argument er et nytt filter. Merk at OR er ikke støttet for relasjoner, kun AND.
 `relasjon(581, egenskap(1234) = 1)`
