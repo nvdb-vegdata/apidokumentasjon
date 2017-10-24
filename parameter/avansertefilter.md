@@ -173,14 +173,14 @@ Spørrestråket består av hovedsakelig to funksjoner med AND og OR mellom. Data
 <td><em>egenskaper</em></td>
 <td>
 Filtrering på egenskaper, tar en egenskapstype ID som parameter.
-`egenskap(2021) = 2738`
+<code class="highlighter-rouge">egenskap(2021) = 2738</code>
 </td>
 </tr>
 <tr>
 <td><em>relasjon</em></td>
 <td>
 Filtrering på datter objekter, første parameter er type ID til relatert objekt, andre argument er et nytt filter. Merk at OR er ikke støttet for relasjoner, kun AND.
-`relasjon(581, egenskap(1234) = 1)`
+<code class="highlighter-rouge">relasjon(581, egenskap(1234) = 1)</code>
 </td>
 </tr>
 </tbody>
@@ -207,11 +207,11 @@ Kan brukes på egenskaper av type heltall, desimaltall og strenger, men ikke for
 <tr>
 <td>in</td>
 <td>Brukes for å sjekke om egenskapen er en av verdiene spesifisert i en liste.  
-Eksempel: `egenskap(2021) in [11576,2728,2726]`</td>
+Eksempel: <code class="highlighter-rouge">egenskap(2021) in [11576,2728,2726]</code></td>
 </tr>
 <tr>
 <td>AND OR</td>
-<td>Boolsk algebra, brukes mellom funksjoner. `egenskap(2021)=2738 OR egenskap(2021)=2741`</td>
+<td>Boolsk algebra, brukes mellom funksjoner. <code class="highlighter-rouge">egenskap(2021)=2738 OR egenskap(2021)=2741</code></td>
 </tr>
 </tbody>
 </table>

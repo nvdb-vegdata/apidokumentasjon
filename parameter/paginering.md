@@ -20,7 +20,7 @@ Spørringer mot NVDB API kan potensielt returnere et stort antall objekter. For 
 ## Eksempel
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker?antall=5</div>
+GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker?antall=5
 ```
 
 ```json
@@ -29,7 +29,6 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker?antall=5</div>
         ...
     ],
     "metadata": {
-        "antall": 5,
         "returnert": 5,
         "neste": {
             "start": "AoEpMTAwMTk1Nnw3",
