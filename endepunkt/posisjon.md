@@ -33,7 +33,7 @@ Feltet `avstand` i responsen angir hvor mange meter det er mellom innsendt punkt
 ### Eksempel
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon.json?nord=7038165&ost=269815
+GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815
 ```
 
 ```json
@@ -66,7 +66,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon.json?nord=7038165&ost=269815
 ### Eksempel: Inkluder konnekteringslenker
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon.json?nord=7038165&ost=269815&konnekteringslenker=true
+GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815&konnekteringslenker=true
 ```
 
 ```json

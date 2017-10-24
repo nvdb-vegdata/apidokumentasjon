@@ -24,83 +24,87 @@ Følgende objekt returneres som en del av vegobjekter, og som respons i andre en
     }
 }
 ```
-<table>
-<thead>
-<tr>
-<th>Felt</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
+
 <tbody>
 <tr>
 <td>fylke</td>
-<td>Tosifret fylkesnummer.</td>
-</tr>
-<tr>
-<td>kommune</td>
-<td>Tosifret kommunenummer.  
-For europa-, riks- og fylkesveger er kommunenummeret alltid 0.</td>
-</tr>
-<tr>
-<td>kategori</td>
-<td>Angir vegkategori.
-<ul>
-<li><b>E</b> - Europaveg</li>
-<li><b>R</b> - Riksveg</li>
-<li><b>F</b> - Fylkesveg</li>
-<li><b>K</b> - Kommunal veg</li>
-<li><b>P</b> - Privat veg</li>
-<li><b>S</b> - Skogsbilveg</li>
-</dl>
-</td>
-</tr>
-<tr>
-<td>status</td>
-<td>Angir vegstatus.
-<ul>
-<li><b>V</b> - Eksisterende veg</li>
-<li><b>W</b> - Midlertidig veg</li>
-<li><b>T</b> - Midlertidig status bilveg</li>
-<li><b>S</b> - Eksisterende ferjestrekning</li>
-<li><b>G</b> - Gang-/sykkelveg</li>
-<li><b>U</b> - Midlertidig status gang-/sykkelveg</li>
-<li><b>B</b> - Beredskapsveg</li>
-<li><b>M</b> - Serviceveg</li>
-<li><b>X</b> - Rømningstunnel</li>
-<li><b>A</b> - Anleggsveg</li>
-<li><b>H</b> - Gang-/sykkelveg anlegg</li>
-<li><b>P</b> - Vedtatt veg</li>
-<li><b>E</b> - Vedtatt ferjestrekning</li>
-<li><b>Q</b> - Vedtatt gang-/sykkelveg</li>
-</dl>
-</td>
-</tr>
-<tr>
-<td>nummer</td>
-<td>Angir vegnummer.</td>
-</tr>
-<tr>
-<td>hp</td>
-<td>Angir parsell.
-<ul>
-<li><b>1–49</b> - Hovedparseller</li>
-<li><b>50–69</b> - Armer</li>
-<li><b>70–199</b> - Ramper</li>
-<li><b>400–599</b> - Rundkjøringer</li>
-<li><b>600–699</b> - Skjøteparseller</li>
-<li><b>800–998</b> - Trafikklommer, rasteplasser</li>
-</dl>
-</td>
-</tr>
-<tr>
-<td>meter</td>
-<td>Angir posisjon i hele meter, regnet fra parsellens start.</td>
-</tr>
-<tr>
-<td>kortform</td>
-<td>Sammenslått versjon av vegreferansen.</td>
-</tr>
-</tbody>
+<table>
+    <thead>
+    <tr>
+        <th>Felt</th>
+        <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>fylke</td>
+        <td>Tosifret fylkesnummer.</td>
+    </tr>
+    <tr>
+        <td>kommune</td>
+        <td>Tosifret kommunenummer.
+            For europa-, riks- og fylkesveger er kommunenummeret alltid 0.</td>
+    </tr>
+    <tr>
+        <td>kategori</td>
+        <td>Angir vegkategori.
+            <ul>
+                <li><b>E</b> - Europaveg</li>
+                <li><b>R</b> - Riksveg</li>
+                <li><b>F</b> - Fylkesveg</li>
+                <li><b>K</b> - Kommunal veg</li>
+                <li><b>P</b> - Privat veg</li>
+                <li><b>S</b> - Skogsbilveg</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>Angir vegstatus.
+            <ul>
+                <li><b>V</b> - Eksisterende veg</li>
+                <li><b>W</b> - Midlertidig veg</li>
+                <li><b>T</b> - Midlertidig status bilveg</li>
+                <li><b>S</b> - Eksisterende ferjestrekning</li>
+                <li><b>G</b> - Gang-/sykkelveg</li>
+                <li><b>U</b> - Midlertidig status gang-/sykkelveg</li>
+                <li><b>B</b> - Beredskapsveg</li>
+                <li><b>M</b> - Serviceveg</li>
+                <li><b>X</b> - Rømningstunnel</li>
+                <li><b>A</b> - Anleggsveg</li>
+                <li><b>H</b> - Gang-/sykkelveg anlegg</li>
+                <li><b>P</b> - Vedtatt veg</li>
+                <li><b>E</b> - Vedtatt ferjestrekning</li>
+                <li><b>Q</b> - Vedtatt gang-/sykkelveg</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>nummer</td>
+        <td>Angir vegnummer.</td>
+    </tr>
+    <tr>
+        <td>hp</td>
+        <td>Angir parsell.
+            <ul>
+                <li><b>1–49</b> - Hovedparseller</li>
+                <li><b>50–69</b> - Armer</li>
+                <li><b>70–199</b> - Ramper</li>
+                <li><b>400–599</b> - Rundkjøringer</li>
+                <li><b>600–699</b> - Skjøteparseller</li>
+                <li><b>800–998</b> - Trafikklommer, rasteplasser</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>meter</td>
+        <td>Angir posisjon i hele meter, regnet fra parsellens start.</td>
+    </tr>
+    <tr>
+        <td>kortform</td>
+        <td>Sammenslått versjon av vegreferansen.</td>
+    </tr>
+    </tbody>
 </table>
 
 For _strekninger_ returneres `fra_meter` og `til_meter` i stedet for `meter`.
@@ -166,6 +170,7 @@ For å gjøre presise avgrensninger av hvilket vegnettet det skal hentes vegobje
 
 Parameteren er case-insensitiv, og mellomrom fjernes automatisk.
 
+
 ## Vegreferanse som unik nøkkel
 
 Vegnummer for FKPS-veger er ikke unike. Fylkesveg 950 finnes for eksempel både i Nordland, Sør-Trøndelag og Vestfold, og du finner kommunalveg 1640 flere steder i landet.
@@ -177,6 +182,7 @@ For å angi et unikt punkt ved å bruke vegreferanse, må derfor fylkes- og komm
 Eksempel: `1600Ev6hp1m2024`
 
 Endepunktet [/veg](#/get/veg) støtter kun vegreferanser som angis på denne måten.
+
 
 ## Mer informasjon
 
