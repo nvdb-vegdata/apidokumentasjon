@@ -636,6 +636,11 @@ slettet</td>
 <td>Her kan du styre tidsterskelen.  
 <span class="obligatorisk">Obligatorisk</span></td>
 </tr>
+<tr>
+<td>antall</td>
+<td>Nummer</td>
+<td>Antall per respons</td>
+</tr>
 </tbody>
 </table>
 
