@@ -25,6 +25,7 @@ Vegobjekters stedfesting til det topologiske vegnettverket angis ved å oppgi en
 }
 ```
 
+
 <table>
     <tr>
         <th>Felt</th><th>Beskrivelse</th>
@@ -36,6 +37,8 @@ Vegobjekters stedfesting til det topologiske vegnettverket angis ved å oppgi en
         <tr><td> kortform </td> <td>Sammenslått versjon av veglenkeposisjonen. </td></tr>
     </tr>
 </table>
+
+
 
 
 ### Eksempel: Strekning
