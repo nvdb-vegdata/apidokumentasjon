@@ -48,46 +48,60 @@ Det er kun mulig å spørre etter vegobjekter av én type i samme spørring.
 Bruk parametere til å angi hvilke informasjonselementer responsen skal inneholde.
 
 <table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>inkluder</td>
-<td>metadata  
-egenskaper  
-relasjoner  
-lokasjon  
-vegsegmenter  
-geometri  
-alle</td>
-<td>En kommaseparert liste over hvilke informasjonselementer som skal returneres i tillegg til vegobjektenes id.</td>
-</tr>
-<tr>
-<td>srid</td>
-<td>[srid](#/verdi/geometri)</td>
-<td>Angir hvilket geografisk referansesystem geometrien skal returneres i.  
-<span class="default">Default: 32633</span></td>
-</tr>
-<tr>
-<td>geometritoleranse</td>
-<td>10  
-20  
-30</td>
-<td>Angir om det skal returneres en forenklet geometri. Dersom parameteren utelates, returneres full geometri for vegobjektene. Nummeret angir distansetoleranse for generering av forenklet geometri. <span class="default">Default: full geometri</span> _Vær oppmerksom på at standardverdiene kan erstattes av mer egnede verdier uten at denne dokumentasjonen er helt oppdatert._</td>
-</tr>
-<tr>
-<td>segmentering</td>
-<td>true  
-false</td>
-<td>Angir om strekningsobjekter skal segmenteres etter søkeområdet.  
-<span>Advarsel: versjon 1 av APIet gav utelukkende ut _usegmenterte_ objekter.</span> <span class="default">Default: true</span></td>
-</tr>
-</tbody>
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Verdi</th>
+        <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>inkluder</td>
+        <td>
+            <ul>
+                <li>metadata</li>
+                <li>egenskaper</li>
+                <li>relasjoner</li>
+                <li>lokasjon</li>
+                <li>vegsegmenter</li>
+                <li>geometri</li>
+                <li>alle</li>
+            </ul>
+        </td>
+        <td>En kommaseparert liste over hvilke informasjonselementer som skal returneres i tillegg til vegobjektenes id.</td>
+    </tr>
+    <tr>
+        <td>srid</td>
+        <td><a href="/verdi/geometri">srid</a></td>
+        <td>Angir hvilket geografisk referansesystem geometrien skal returneres i.
+            <span class="default">Default: 32633</span>
+        </td>
+    </tr>
+    <tr>
+        <td>geometritoleranse</td>
+        <td>
+            <ul>
+                <li>10</li>
+                <li>20</li>
+                <li>30</li>
+            </ul>
+        </td>
+        <td>Angir om det skal returneres en forenklet geometri. Dersom parameteren utelates, returneres full geometri for vegobjektene. Nummeret angir distansetoleranse for generering av forenklet geometri. <span class="default">Default: full geometri</span> <em>Vær oppmerksom på at standardverdiene kan erstattes av mer egnede verdier uten at denne dokumentasjonen er helt oppdatert.</em></td>
+    </tr>
+    <tr>
+        <td>segmentering</td>
+        <td>
+            <ul>
+                <li>true</li>
+                <li>false</li>
+            </ul>
+        </td>
+        <td>Angir om strekningsobjekter skal segmenteres etter søkeområdet.
+            <span>Advarsel: versjon 1 av APIet gav utelukkende ut <em>usegmenterte</em> objekter.</span> <span class="default">Default: true</span>
+        </td>
+    </tr>
+    </tbody>
 </table>
 
 
@@ -96,30 +110,30 @@ For å avgrense søkeresultatet, støttes følgende parametere:
 
 
 <table>
-<thead>
-<tr>
-<th>Søkeparameter</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[Områdefilter](#/parameter/lokasjonsfilter)</td>
-<td>Angir hvilke områder og vegnett søket skal gjennomføres innenfor.</td>
-</tr>
-<tr>
-<td>[Egenskapsfilter](#/parameter/egenskapsfilter)</td>
-<td>Angir at resultatsettet kun skal inneholde vegobjekter med spesifiserte egenskapsverdier.</td>
-</tr>
-<tr>
-<td>[Overlappfilter](#/parameter/overlappfilter)</td>
-<td>Angir at vegobjektene skal overlappe med spesifiserte vegobjekttyper.</td>
-</tr>
-<tr>
-<td>[Paginering](#/parameter/paginering)</td>
-<td>Angir hvor mange vegobjekter som skal returneres i hver spørring mot APIet.</td>
-</tr>
-</tbody>
+    <thead>
+    <tr>
+        <th>Søkeparameter</th>
+        <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="/parameter/lokasjonsfilter">Områdefilter</a></td>
+        <td>Angir hvilke områder og vegnett søket skal gjennomføres innenfor.</td>
+    </tr>
+    <tr>
+        <td><a href="/parameter/egenskapsfilter">Egenskapsfilter</a></td>
+        <td>Angir at resultatsettet kun skal inneholde vegobjekter med spesifiserte egenskapsverdier.</td>
+    </tr>
+    <tr>
+        <td><a href="/parameter/overlappfilter">Overlappfilter</a></td>
+        <td>Angir at vegobjektene skal overlappe med spesifiserte vegobjekttyper.</td>
+    </tr>
+    <tr>
+        <td><a href="/parameter/paginering">Paginering</a></td>
+        <td>Angir hvor mange vegobjekter som skal returneres i hver spørring mot APIet.</td>
+    </tr>
+    </tbody>
 </table>
 
 ### Eksempel: Hent bomstasjoner
@@ -145,7 +159,6 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10
         ...
     ],
     "metadata": {
-        "antall": 10,
         "returnert": 10,
         "neste": {
             "start": "Nzk4MTM3Nzc=",
@@ -236,6 +249,8 @@ APIet støtter segmentering på følgende felter:
 *   Vegkategori
 *   Vegstatus
 *   Hovedparsell
+*   Kontraksområde
+*   Riksvegreute
 
 ## Hent statistikk
 
@@ -298,7 +313,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/<vegobjekttype.id>/<vegobjek
 ```
 
 
-Dersom du ikke vet hvilken vegobjekttype et vegobjekt er, kan du bruke hjelpefunksjonen nedenfor, som videresender deg til korrekt URL.
+Dersom du ikke vet hvilken vegobjekttype et vegobjekt er, kan du bruke hjelperesurssen nedenfor, som videresender deg til korrekt URL.
 
 ```
 GET https://www.vegvesen.no/nvdb/api/v2/vegobjekt?id=<vegobjektid>
@@ -310,40 +325,54 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekt?id=<vegobjektid>
 Et kall mot tjenesten returnerer det ønskede objektet med alle informasjonsfelter. Hvilke informasjonselementer som inkluderes for objektet kan begrenses og responsen kan også inneholde en liste objekter dersom dybdeparameteren brukes.
 
 <table>
-<thead>
-<tr>
-<th>Navn</th>
-<th>Verdi</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>dybde</td>
-<td>1  
-2  
-...  
-n  
-_full_</td>
-<td>Parameteren brukes til å spesifisere antall slektsledd døtre man vil hente ut. **Når denne parameteren angis vil responsen alltid inneholde en liste.**
-*   **full** Hent hele hierarkiet for dette objektet.
-*   **1** Hent kun dette objektet.
-*   **n > 1** Henter <emph>n</emph> nivåer inntil bunnen av treet treffes.
-<span class="default">Default: 1</span></td>
-</tr>
-<tr>
-<td>inkluder</td>
-<td>metadata  
-egenskaper  
-relasjoner  
-lokasjon  
-vegsegmenter  
-geometri  
-alle</td>
-<td>En kommaseparert liste over hvilke informasjonselementer som skal returneres i tillegg til vegobjektets id.  
-<span class="default">Default: alle, bortsett fra vegsegmenter</span></td>
-</tr>
-</tbody>
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Verdi</th>
+        <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>dybde</td>
+        <td>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>...</li>
+                <li>n</li>
+                <li><em>full</em></li>
+            </ul>
+        </td>
+        <td>
+            Parameteren brukes til å spesifisere antall slektsledd døtre man vil hente ut. <em>Når denne parameteren angis vil responsen alltid inneholde en liste.</em>
+            <ul>
+                <li><em>full</em> Hent hele hierarkiet for dette objektet.</li>
+                <li><em>1</em> Hent kun dette objektet.</li>
+                <li><em>n > 1</em> Henter <em>n</em> nivåer inntil bunnen av treet treffes.</li>
+            </ul>
+            <span class="default">Default: 1</span>
+        </td>
+    </tr>
+    <tr>
+        <td>inkluder</td>
+        <td>
+            <ul>
+                <li>metadata</li>
+                <li>egenskaper</li>
+                <li>relasjoner</li>
+                <li>lokasjon</li>
+                <li>vegsegmenter</li>
+                <li>geometri</li>
+                <li>alle</li>    
+            </ul>
+            
+        </td>
+        <td>En kommaseparert liste over hvilke informasjonselementer som skal returneres i tillegg til vegobjektets id.
+            <span class="default">Default: alle, bortsett fra vegsegmenter</span>
+        </td>
+    </tr>
+    </tbody>
 </table>
 
 ### Eksempel: Hent et spesifikt tunnelløp
@@ -356,7 +385,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552
 ```json
 {
     "id": 89204552,
-    "href": "https://www.utv.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552",
+    "href": "https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552",
     "metadata": {
         "type": {
             "id": 67,

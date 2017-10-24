@@ -24,14 +24,13 @@ For øyeblikket støttes _kun_ `type-id` for å angi egenskapstype.
 
 Det er støtte for følgende operatorer:
 
-<ul>
-<li><b>=</b> - lik
-<li><b>!=</b> - ulik
-<li><b><</b> - større enn
-<li><b>></b> - mindre enn,
-<li><b>>=</b> - større enn, eller lik
-<li><b><=</b> - mindre enn, eller lik
-</ul>
+
+* **=** - lik
+* **!=** - ulik
+* **<** - større enn
+* **>** - mindre enn,
+* **>=** - større enn, eller lik
+* **<=** - mindre enn, eller lik
 
 Større enn- og mindre enn-operatorene er kun relevant for egenskapstyper av type tall eller dato.
 
@@ -121,7 +120,7 @@ https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570/statistikk?egenskap="5055>'20
 Egenskapsfilteret støtter også filtrering på klokkeslett som heltall.
 
 ```
-https://www.utv.vegvesen.no/nvdb/api/v2/vegobjekter/570/statistikk?egenskap="5056=1200"
+https://www.vegvesen.no/nvdb/api/v2/vegobjekter/570/statistikk?egenskap="5056=1200"
 ```
 
 
