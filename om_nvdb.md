@@ -94,7 +94,7 @@ Et vegobjekt er koordinatfestet, som gjør at det kan vises på kart. Enten punk
 De fleste vegobjekter har en geometri som er utledet fra vegnettet, og er derfor plassert langs vegens senterlinje. Egengeometri blir mer og mer utbredt. Om et objekt har egengeometri eller ikke, er eksplisitt angitt i API-responsen.
 
 ```json
-{ "geometri": "POINT (271441.3500267718 7039309.464531345)" }
+{ "geometri": "POINT Z (271441.3500267718 7039309.464531345, 0)" }
 ```
 
 
@@ -176,7 +176,7 @@ Et objekt kan ha en assosiasjon til andre objekter, oftest i form av en komposis
 
 Objekter i NVDB-databasen slettes som hovedregel ikke. De settes i stedet historiske, ved at det angis en sluttdato. Dersom et objekt får en ny verdi på en egenskap, slettes ikke den eksisterende egenskapsverdien fra databasen. Det opprettes i stedet en ny versjon av objektet. Den eksisterende versjonen får en sluttdato, mens den nye versjonen får en tilsvarende startdato.
 
-Per dagens dato er det kun gyldige objektversjoner som eksponeres i NVDB API. I 2016 vil det utvikles støtte for historiske data.
+Per dagens dato er det kun gyldige objektversjoner som eksponeres i NVDB API. Det vil snart®™ utvikles støtte for historiske data.
 
 ### Vegnett
 
