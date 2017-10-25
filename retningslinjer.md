@@ -47,7 +47,7 @@ GET /vegobjekttyper.xml
 
 Vi oppfordrer våre brukere til å hente data i sanntid, fremfor å laste ned store datasett i bulk, med jevne mellomrom.
 
-***TODO:**
+For dette tilbys endepunktet [/vegobjekter/{id}/endringer](endepunkt/vegobjekter#hent-endringer)
 
 ## Cross Origin Resource Sharing
 
@@ -75,205 +75,105 @@ APIet har som mål å feile så raskt som mulig for å assistere brukeren. I den
 ### Feilkoder
 
 <table>
-
-<thead>
-
-<tr>
-
-<th>HTTP Status</th>
-
-<th>Feilkode</th>
-
-<th>Beskrivelse</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>404</td>
-
-<td>4012</td>
-
-<td>Objekt ble ikke funnet.</td>
-
-</tr>
-
-<tr>
-
-<td>415</td>
-
-<td>4001</td>
-
-<td>Denne mediatypen er ikke støttet.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4000</td>
-
-<td>Noe er galt med brukerens input.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4002</td>
-
-<td>Feil i spesifisering av heltallsverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4003</td>
-
-<td>Feil i spesifisering av heltallslisteverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4004</td>
-
-<td>Manglende obligatorisk felt.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4005</td>
-
-<td>Feil i spesifisering av tekstverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4006</td>
-
-<td>Feil i spesifisering av tekstlisteverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4007</td>
-
-<td>Feil i spesifisering av datoverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4008</td>
-
-<td>Feil i spesifisering av boolsk verdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4009</td>
-
-<td>Konflikterende feltverdier spesifisert.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4010</td>
-
-<td>Feil i spesifisering av flyttallsverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4011</td>
-
-<td>Feil i spesifisering av flyttallistesverdi.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4013</td>
-
-<td>Ukjent felt spesifisert.</td>
-
-</tr>
-
-<tr>
-
-<td>422</td>
-
-<td>4014</td>
-
-<td>Dette feltet kan kun forekomme én gang.</td>
-
-</tr>
-
-<tr>
-
-<td>500</td>
-
-<td>5000</td>
-
-<td>Uventet feil har oppstått.</td>
-
-</tr>
-
-<tr>
-
-<td>500</td>
-
-<td>5001</td>
-
-<td>Feil med kommunikasjon med databaser.</td>
-
-</tr>
-
-<tr>
-
-<td>500</td>
-
-<td>5002</td>
-
-<td>Typeregisteret mangler.</td>
-
-</tr>
-
-</tbody>
-
+    <thead>
+    <tr>
+        <th>HTTP Status</th>
+        <th>Feilkode</th>
+        <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>404</td>
+        <td>4012</td>
+        <td>Objekt ble ikke funnet.</td>
+    </tr>
+    <tr>
+        <td>415</td>
+        <td>4001</td>
+        <td>Denne mediatypen er ikke støttet.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4000</td>
+        <td>Noe er galt med brukerens input.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4002</td>
+        <td>Feil i spesifisering av heltallsverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4003</td>
+        <td>Feil i spesifisering av heltallslisteverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4004</td>
+        <td>Manglende obligatorisk felt.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4005</td>
+        <td>Feil i spesifisering av tekstverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4006</td>
+        <td>Feil i spesifisering av tekstlisteverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4007</td>
+        <td>Feil i spesifisering av datoverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4008</td>
+        <td>Feil i spesifisering av boolsk verdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4009</td>
+        <td>Konflikterende feltverdier spesifisert.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4010</td>
+        <td>Feil i spesifisering av flyttallsverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4011</td>
+        <td>Feil i spesifisering av flyttallistesverdi.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4013</td>
+        <td>Ukjent felt spesifisert.</td>
+    </tr>
+    <tr>
+        <td>422</td>
+        <td>4014</td>
+        <td>Dette feltet kan kun forekomme én gang.</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>5000</td>
+        <td>Uventet feil har oppstått.</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>5001</td>
+        <td>Feil med kommunikasjon med databaser.</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>5002</td>
+        <td>Typeregisteret mangler.</td>
+    </tr>
+    </tbody>
 </table>
 
 ## Evolusjonsstrategi
