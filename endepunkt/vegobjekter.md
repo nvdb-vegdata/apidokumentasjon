@@ -531,6 +531,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552
 }
 ```
 
+Det er mulig å spesifisere [geometri-srid](#verdi/geometri) for dette endepunktet.
 
 ## Hent egenskaper
 
