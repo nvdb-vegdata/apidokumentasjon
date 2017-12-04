@@ -67,6 +67,7 @@ Bruk parametere til å angi hvilke informasjonselementer responsen skal innehold
                 <li>vegsegmenter</li>
                 <li>geometri</li>
                 <li>alle</li>
+                <li>minimum</li>
             </ul>
         </td>
         <td>En kommaseparert liste over hvilke informasjonselementer som skal returneres i tillegg til vegobjektenes id.</td>
@@ -101,9 +102,41 @@ Bruk parametere til å angi hvilke informasjonselementer responsen skal innehold
             <span>Advarsel: versjon 1 av APIet gav utelukkende ut <em>usegmenterte</em> objekter.</span> <span class="default">Default: true</span>
         </td>
     </tr>
+    <tr>
+        <td>inkludergeometri</td>
+        <td>
+            <ul>
+                <li>egenskap</li>
+                <li>utledet</li>
+                <li>lokasjon</li>
+                <li>ingen</li>
+            </ul>
+        </td>
+        <td>
+            Når denne parameteren er fraværende vil hvert vegobjekt ha opptil tre geometrier; 
+            under attributter, lokasjon og geometri-feltet direkte på objektet. 
+            Noen objekter kan ha veldig stor geometri, som gjør at responsen fra API-et blir veldig stor. 
+            Dersom man ikke har bruk for alle geometriene kan man bruke denne parameteren til å fjerne noen av dem. 
+            <em>egenskap</em> inkluderer objektets egengeometri under <em>vegobjekt.egenskaper</em>, om denne eksisterer.
+            <em>utledet</em> inkluderer <em>vegobjekt.geometri</em>.
+            <em>lokasjon</em> inkluderer geometri under <em>vegobjekt.lokasjon</em>.
+            <em>ingen</em> medfører at ingen av geometriene er med i responsen. 
+            Dette parametret virker som et filter, så den geometri-egenskapen referert til må være inkludert 
+            med `inkluder`-parametret.
+        </td>
+    </tr>
     </tbody>
 </table>
 
+### vegobjekt.geometri
+Et vegobjekt har opptil to geometrier, egengeometri og stedfestet geometri. Egengeoemtrien er plassert under 
+`vegobjekt.egenskaper` om den finnes, stedfestet geometri er plassert under `vegobjekt.lokasjon`.
+
+I tillegg til de nevnte feltene på vegobjekt-responsen returneres også `vegobjekt.geometri` (dersom man har `inkluder=geometri eller alle`), 
+slik at man alltid finner geometrien for vegobjektet ett sted. 
+Dette feltet er egengeometri dersom objektet har det, hvis ikke har feltet stedfestet geometri. Ved hvilken av disse 
+som er tilfelle finner man ut ved å se på `vegobjekt.geometri.egengeometri`.
+ 
 
 ### Avgrens søkeresultatet
 For å avgrense søkeresultatet, støttes følgende parametere:
