@@ -210,6 +210,11 @@ Kan brukes på egenskaper av type heltall, desimaltall og strenger, men ikke for
 Eksempel: <code class="highlighter-rouge">egenskap(2021) in [11576,2728,2726]</code></td>
 </tr>
 <tr>
+<td>notin</td>
+<td>Her ønsker du alle verdier for egenskapen som ikke er spesifisert i listen. 
+Eksempel: <code class="highlighter-rouge">egenskap(2021) notin [11576,2728]</code></td>
+</tr>
+<tr>
 <td>AND OR</td>
 <td>Boolsk algebra, brukes mellom funksjoner. <code class="highlighter-rouge">egenskap(2021)=2738 OR egenskap(2021)=2741</code></td>
 </tr>
@@ -221,4 +226,38 @@ Punktum må brukes i desimaltall. " eller ' må brukes for strenger.
 
 `null` kan brukes for å filtrere på om en egenskap har verdi eller ikke. `egenskap(2010) = null`
 
-Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429`
+Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429)`
+
+
+  
+  
+
+## Negering av uttrykk adskilt med OR-operator gir for mange treff
+
+Om du vil søke etter alle verdier med unntak av visse verdier for en egenskap, anbefaler vi deg å bruke opplisting med "notin". 
+Det virker veldig bra. 
+Her er et eksempel som vil gi treff for alle dager unntatt fredager, lørdager og søndager:    
+`(egenskap(5054) notin [6247, 6248, 6249])`  
+
+Du kan også unngå problemet ved å bruke AND-operator. For å få ekslukdert de tre dagene kan du skrive:  
+`( egenskap(5054!=6247 AND egenskap(5054)!=6248 AND egenskap(5054)!=6249 )`
+
+
+
+### Hvorfor gir negerte uttrykk separert med OR-operator for mange treff?
+
+Dette utrykket vil gi langt flere treff enn man forventer:   
+`(egenskap(5054!=6247 OR egenskap(5054)!=6248 OR egenskap(5054)!=6249)` 
+
+Dette vil bli beregnet slik:
+(alle dager, men ikke fredager eller lørdager) eller (alle dager, men ikke søndager). 
+Dette betyr at du havner ut på alle dager men ikke søndager!  
+
+Med to verdier (fredag og lørdag) virker det:  
+`(egenskap(5054!=6247 OR egenskap(5054)!=6248)`  
+
+  
+Legger du dette til på slutten `OR egenskap(5054!=6249)`, får du igjen for mange treff. 
+ 
+   
+ 
