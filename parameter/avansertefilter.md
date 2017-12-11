@@ -210,6 +210,11 @@ Kan brukes på egenskaper av type heltall, desimaltall og strenger, men ikke for
 Eksempel: <code class="highlighter-rouge">egenskap(2021) in [11576,2728,2726]</code></td>
 </tr>
 <tr>
+<td>notin</td>
+<td>Her ønsker du alle verdier for egenskapen som ikke er spesifisert i listen. 
+Eksempel: <code class="highlighter-rouge">egenskap(2021) notin [11576,2728]</code></td>
+</tr>
+<tr>
 <td>AND OR</td>
 <td>Boolsk algebra, brukes mellom funksjoner. <code class="highlighter-rouge">egenskap(2021)=2738 OR egenskap(2021)=2741</code></td>
 </tr>
@@ -221,4 +226,4 @@ Punktum må brukes i desimaltall. " eller ' må brukes for strenger.
 
 `null` kan brukes for å filtrere på om en egenskap har verdi eller ikke. `egenskap(2010) = null`
 
-Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429`
+Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429)`
