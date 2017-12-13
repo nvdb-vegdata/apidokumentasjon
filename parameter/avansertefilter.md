@@ -226,4 +226,4 @@ Punktum må brukes i desimaltall. " eller ' må brukes for strenger.
 
 `null` kan brukes for å filtrere på om en egenskap har verdi eller ikke. `egenskap(2010) = null`
 
-Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429)`
+Spørrespråket støtter også bruk av parenteser. F.eks. Trafikkulykke på lørdag eller søndag med skadegrad "Alvorlig skadd": `(egenskap(5054)=6248 OR egenskap(5054)=6249) AND egenskap(5074)=6429`
