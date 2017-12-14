@@ -210,6 +210,11 @@ Kan brukes på egenskaper av type heltall, desimaltall og strenger, men ikke for
 Eksempel: <code class="highlighter-rouge">egenskap(2021) in [11576,2728,2726]</code></td>
 </tr>
 <tr>
+<td>notin</td>
+<td>Her ønsker du alle verdier for egenskapen som ikke er spesifisert i listen. 
+Eksempel: <code class="highlighter-rouge">egenskap(2021) notin [11576,2728]</code></td>
+</tr>
+<tr>
 <td>AND OR</td>
 <td>Boolsk algebra, brukes mellom funksjoner. <code class="highlighter-rouge">egenskap(2021)=2738 OR egenskap(2021)=2741</code></td>
 </tr>

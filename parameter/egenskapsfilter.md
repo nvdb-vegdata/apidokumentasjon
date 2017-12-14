@@ -44,6 +44,9 @@ Bruk `null` som verdi for å finne objekter som har, eller ikke har, verdi på b
 
 Wildcard `*` kan benyttes for tekst og datoer.
 
+Merk! Egenskapstyper med datatype struktur er ikke søkbare. Du vil få 0 treff for ÅDT-fordeling (606069). 
+  
+
 ### Kombinasjon av flere egenskapsfiltre
 
 Syntaksen for spørrespråket støtter bruk av paranteser og AND/OR-sammenhenger.
