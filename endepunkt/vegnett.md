@@ -183,6 +183,10 @@ Veglenkene som eksponeres gjennom APIet er segmentert etter vegreferanse, slik a
             </ul>
         </td>
     </tr>
+    <tr>
+        <td>superid</td>
+        <td>Referanse til foreldrelenke i topologinivå over om lenken er kjørebane eller kjørefelt.
+    </tr>
     </tbody>
 </table>
 
