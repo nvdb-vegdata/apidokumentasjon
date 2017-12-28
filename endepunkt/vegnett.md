@@ -185,7 +185,7 @@ Veglenkene som eksponeres gjennom APIet er segmentert etter vegreferanse, slik a
     </tr>
     <tr>
         <td>superid</td>
-        <td>Referanse til foreldrelenke i topologinivå over om lenken er kjørebane eller kjørefelt.
+        <td>Referanse til foreldrelenke i topologinivå over om lenken er kjørebane eller kjørefelt.</td>
     </tr>
     </tbody>
 </table>
