@@ -6,6 +6,8 @@ order: 0
 
 Statens vegvesen tilbyr et REST-basert API som kan benyttes for å få tilgang til informasjonen som befinner seg i Nasjonal vegdatabank (NVDB).
 
+For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvdb-vegdata/api-les-v2)
+
 ## Tips for å komme raskt igang
 
 1.  Besøk [Vegkart](https://www.vegvesen.no/vegkart/vegkart){:target="_blank"} for å få innblikk i hvilke data som er tilgjengelig.
@@ -45,6 +47,11 @@ NVDB API v1 er tilgjengelig på følgende adresse:
 
 *   [Dokumentasjon for NVDB API v1](https://www.vegvesen.no/nvdb/apidokumentasjon/v1)
 
+## NVDB API versjon 3
+Versjon 3 av apiet er under utvikling. 
+Det meste vil være veldig likt V2, den største forskjellen er en representasjon av vegnettet som ikke er segmentert.
+
+[Dokumentasjonen finner du her](https://nvdbapilesv3.docs.apiary.io/)
 
 ## Endringslogg
 
