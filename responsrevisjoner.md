@@ -15,3 +15,4 @@ Tilgjengelige responsrevisjoner
 
 ## Revisjon 2
 * Format for `objekt.metadata.lastmodified` endres fra `yyyy-MM-dd HH:mm:ss` til `yyyy-MM-ddTHH:mm:ss`
+* 3D-geometri hvor z-koordinat mangler bruker `-999999` som z-koordinat.
