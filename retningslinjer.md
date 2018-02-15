@@ -176,6 +176,8 @@ APIet har som mål å feile så raskt som mulig for å assistere brukeren. I den
     </tbody>
 </table>
 
+I tillegg vil feilresponser ha header `X-REQUEST-ID` som du kan bruke om du kontakter oss om feilen, slik at det er lettere å hjelpe deg.
+
 ## Evolusjonsstrategi
 
 Kort fortalt vil det fungere på følgende måte:
