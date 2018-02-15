@@ -20,7 +20,7 @@ Følgende objekt returneres som en del av vegobjekter, og som respons i andre en
         "nummer": 6,
         "hp": 1,
         "meter": 2024,
-        "kortform": "1600 Ev6 hp1 m2024"
+        "kortform": "5000 Ev6 hp1 m2024"
     }
 }
 ```
@@ -179,7 +179,7 @@ Hovedparseller er heller ikke unike, og strekningen Ev6 hp1 befinner seg i hele 
 
 For å angi et unikt punkt ved å bruke vegreferanse, må derfor fylkes- og kommunenummer angis.
 
-Eksempel: `1600Ev6hp1m2024`
+Eksempel: `5000Ev6hp1m2024`
 
 Endepunktet [/veg](#/get/veg) støtter kun vegreferanser som angis på denne måten.
 

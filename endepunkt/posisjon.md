@@ -47,7 +47,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815
             "nummer": 706,
             "hp": 52,
             "meter": 344,
-            "kortform": "1600 Rv706 hp52 m344"
+            "kortform": "5000 Rv706 hp52 m344"
         },
         "veglenke": {
             "id": 72863,
@@ -80,7 +80,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815&konnekt
             "nummer": 706,
             "hp": 52,
             "meter": 303,
-            "kortform": "1600 Rg706 hp52 m303"
+            "kortform": "5000 Rg706 hp52 m303"
         },
         "veglenke": {
             "id": 2479536,
@@ -107,13 +107,13 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?lat=63.415855&lon=10.395287&mak
     {
         "vegreferanse": {
             "fylke": 16,
-            "kommune": 1601,
+            "kommune": 5001,
             "kategori": "K",
             "status": "V",
             "nummer": 1001,
             "hp": 2,
             "meter": 104,
-            "kortform": "1601 Kv1001 hp2 m104"
+            "kortform": "5001 Kv1001 hp2 m104"
         },
         "veglenke": {
             "id": 41254,
@@ -129,13 +129,13 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?lat=63.415855&lon=10.395287&mak
     {
         "vegreferanse": {
             "fylke": 16,
-            "kommune": 1601,
+            "kommune": 5001,
             "kategori": "K",
             "status": "G",
             "nummer": 9136,
             "hp": 1,
             "meter": 466,
-            "kortform": "1601 Kg9136 hp1 m466"
+            "kortform": "5001 Kg9136 hp1 m466"
         },
         "veglenke": {
             "id": 71939,
@@ -151,13 +151,13 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?lat=63.415855&lon=10.395287&mak
     {
         "vegreferanse": {
             "fylke": 16,
-            "kommune": 1601,
+            "kommune": 5001,
             "kategori": "K",
             "status": "G",
             "nummer": 7800,
             "hp": 1,
             "meter": 312,
-            "kortform": "1601 Kg7800 hp1 m312"
+            "kortform": "5001 Kg7800 hp1 m312"
         },
         "veglenke": {
             "id": 2234647,

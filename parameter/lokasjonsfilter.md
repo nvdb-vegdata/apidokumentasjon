@@ -49,9 +49,9 @@ Velg én eller flere vegavdelingenes ved å angi vegavdelingenes nummer.
 Velg én eller flere kommuner ved å angi kommunenes nummer.
 
 ```
-?kommune=1601
-?kommune=1601,1602
-?kommune=1601&kommune=1602
+?kommune=5001
+?kommune=5001,5002
+?kommune=5001&kommune=5002
 ```
 
 

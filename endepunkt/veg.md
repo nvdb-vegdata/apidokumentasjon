@@ -25,7 +25,7 @@ srid |  [srid](/verdi/geometri) | Angir hvilket geografisk referansesystem geome
 ### Send inn vegreferanse
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg?vegreferanse=1600Ev6hp12m1000
+GET https://www.vegvesen.no/nvdb/api/v2/veg?vegreferanse=5000Ev6hp12m1000
 ```
 
 
@@ -39,7 +39,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg?vegreferanse=1600Ev6hp12m1000
         "nummer": 6,
         "hp": 12,
         "meter": 1000,
-        "kortform": "1600 Ev6 hp12 m1000"
+        "kortform": "5000 Ev6 hp12 m1000"
     },
     "veglenke": {
         "id": 72811,
@@ -84,7 +84,8 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg?veglenke=0.0123456789@1234
     }
 }
 ```
-
+### Respons ved ingen treff
+Dersom det ikke er noen treff for vegreferansen eller veglenken er statuskoden `204 No content`, og det returneres ikke noe innhold.
 
 ## Masseuthenting
 

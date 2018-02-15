@@ -131,7 +131,7 @@ Et vegobjekt har vegreferanse, for eksempel Europaveg 6, E6, som er en administr
         "nummer": 6,
         "hp": 1,
         "meter": 2024,
-        "kortform": "1600 Ev6 hp1 m2024"
+        "kortform": "5000 Ev6 hp1 m2024"
     }
 }
 ```
