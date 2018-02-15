@@ -39,7 +39,7 @@ I NVDB API skal det brukes id, og ikke navn, når det skal angis en spesifikk ve
 
 ### Mer informasjon
 
-*   [http://labs.vegdata.no/nvdb-datakatalog](http://labs.vegdata.no/nvdb-datakatalog) – Nettsted som inneholder de viktigste detaljene fra datakatalogen
+*   [http://datakatalogen.vegdata.no](http://datakatalogen.vegdata.no) – Nettsted som inneholder de viktigste detaljene fra datakatalogen
 *   [http://tfprod1.sintef.no/datakatalog](http://tfprod1.sintef.no/datakatalog) – Nedlastbar javaklient for komplett innsyn i datakatalogen
 
 ## Eksempel på vegobjekt
