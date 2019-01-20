@@ -17,7 +17,8 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper
 |Navn|Verdi|Beskrivelse|
 |:-|:-|:-|
 |inkluder|egenskapstyper<br>relasjonstyper<br>styringsparametere<br>alle|Angir hvilke informasjonsfelter som skal inkluderes i tillegg til vegobjekttypenes metadata.|
-|kategori|kommaseparerte kategori-id'er|Hent ut vegobjekttyper med de gitte kategoriene. (https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/kategorier) 
+|kategori|kommaseparerte kategori-id'er|Hent ut vegobjekttyper med de gitte kategoriene. (https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/kategorier) Se: [Hent liste av kategorier](## Hent liste over kategorier
+)
 
 ### Respons
 
