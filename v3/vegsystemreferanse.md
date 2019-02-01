@@ -7,7 +7,6 @@ Strekning:
 - Vegkategori  (Europaveg, Fylkesveg, Privat ..)   (Eks: E)
 - Fase          (Veg, Gangveg ..)                  (Eks: V)
 - Vegnummer    (Eks:  6)
-- [Trafikantgruppe]  (K = kjørnde, G = gående)
 - [Strekningsnummer]     (Eks:  S42)
 - [Delstrekningsnummer]  (Eks: D11)
 - [Meterverdi]  eller  [Meterframeter - tilmeter]  (Eks: M0-132)
