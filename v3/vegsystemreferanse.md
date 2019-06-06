@@ -5,7 +5,7 @@
 
 Strekning:
 - Vegkategori  (Europaveg, Fylkesveg, Privat ..)   (Eks: E)
-- Fase          (Veg, Gangveg ..)                  (Eks: V)
+- Fase          (Eksterende(V), Fiktiv(F) ..)                  (Eks: V)
 - Vegnummer    (Eks:  6)
 - [Strekningsnummer]     (Eks:  S42)
 - [Delstrekningsnummer]  (Eks: D11)
