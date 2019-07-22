@@ -20,10 +20,10 @@ Avanserte spørringer krever at brukeren av API-et har inngående kunnskaper om 
 ## Innhold
 
 *   [Eksempler](#eksempler)
-*   [Filtrering på egenskaper](#egenskaper)
-*   [Filtrering på relasjoner](#relasjoner)
-*   [Filtrering på objekter som er stedfestet på samme sted (overlapp)](#overlapp)
-*   [API Parametere](#parametere)
+*   [Filtrering på egenskaper](#filtrering-på-egenskaper)
+*   [Filtrering på relasjoner](#filtrering-på-relasjoner)
+*   [Filtrering på objekter som er stedfestet på samme sted (overlapp)](#filtrering-på-objekter-som-er-stedfestet-på-samme-sted-overlapp)
+*   [API Parametere](#api-parametere)
 *   [Syntaks](#syntaks)
 
 ## Eksempler
@@ -150,7 +150,7 @@ https://www.vegvesen.no/nvdb/api/v2/vegobjekter/571?overlapp="105(egenskap(2021)
 
 ## API Parametere
 
-I tillegg til de ordinære API parameterene på [https://www.vegvesen.no/nvdb/api/v2/vegobjekter](#/get/vegobjekter/) brukes følgende parameter.
+I tillegg til de ordinære API parameterene på [https://www.vegvesen.no/nvdb/api/v2/vegobjekter](../verdi/vegobjekter.md) brukes følgende parameter.
 
 <table>
 <tbody>

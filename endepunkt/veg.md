@@ -16,9 +16,9 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg
 
 | Navn | Verdi | Beskrivelse |
 |:--------|:-------:|--------:|
-vegreferanse | [vegreferanse](verdi/vegreferanse) | Angir vegreferanse som punkt på vegnettet. |
-veglenke | [veglenke](/verdi/veglenke) | Angir veglenke som punkt på vegnettet. |
-srid |  [srid](/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
+vegreferanse | [vegreferanse](../verdi/vegreferanse.md) | Angir vegreferanse som punkt på vegnettet. |
+veglenke | [veglenke](../verdi/veglenke.md) | Angir veglenke som punkt på vegnettet. |
+srid |  [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem geometrien skal returneres i.  **Default: 32633** |
 
 `Vegreferanse` eller `veglenke` må oppgis.
 
@@ -100,9 +100,9 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg/batch
 
 | Navn | Verdi | Beskrivelse |
 |:--------|:-------:|--------:|
-vegreferanser | [vegreferanse](#/verdi/vegreferanse) | Angi en kommaseparert liste med vegreferanser på vegnettet. |  
-veglenker | [veglenke](#/verdi/veglenke) | Angi en kommaseparert liste med veglenker på vegnettet. |  
-srid |  [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
+vegreferanser | [vegreferanse](../verdi/vegreferanse.md) | Angi en kommaseparert liste med vegreferanser på vegnettet. |  
+veglenker | [veglenke](../verdi/veglenke.md) | Angi en kommaseparert liste med veglenker på vegnettet. |  
+srid |  [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 `Vegreferanser` eller `veglenker` må oppgis. De to parameterene kan ikke kombineres.
 
