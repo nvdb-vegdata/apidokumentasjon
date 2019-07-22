@@ -131,6 +131,11 @@ li {
   margin: 0 0 0.5em 0;
 }
 
+li.aktiv {
+  font-weight: 600;
+  color: #444;
+}
+
 ul a, ol a {
   border: 0;
 }
