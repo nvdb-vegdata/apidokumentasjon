@@ -159,7 +159,7 @@ For å avgrense søkeresultatet, støttes følgende parametere:
         <td>Angir at resultatsettet kun skal inneholde vegobjekter med spesifiserte egenskapsverdier.</td>
     </tr>
     <tr>
-        <td><a href="/parameter/overlappfilter">Overlappfilter</a></td>
+        <td><a href="/parameter/avansertefilter">Overlappfilter</a></td>
         <td>Angir at vegobjektene skal overlappe med spesifiserte vegobjekttyper.</td>
     </tr>
     <tr>
@@ -202,7 +202,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10
 ```
 
 
-Det er satt en grense for hvor mange vegobjekter som kan hentes i samme spørring. Les om [paginering](#/parameter/paginering) for å se hvordan alle vegobjekter hentes ved å bruke flere spørringer.
+Det er satt en grense for hvor mange vegobjekter som kan hentes i samme spørring. Les om [paginering](../parameter/paginering.md) for å se hvordan alle vegobjekter hentes ved å bruke flere spørringer.
 
 ### Eksempel: Hent bomstasjoner med metadata og egenskaper
 
@@ -564,7 +564,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552
 }
 ```
 
-Det er mulig å spesifisere [geometri-srid](#verdi/geometri) for dette endepunktet.
+Det er mulig å spesifisere [geometri-srid](../verdi/geometri.md) for dette endepunktet.
 
 ## Hent egenskaper
 
@@ -684,7 +684,7 @@ Per oktober 2017 blir `sist_modifisert` av og til oppdatert selv om det ikke er 
 versjon. 
 I fremtiden vil `sist_modifisert` kun oppdateres dersom det er forskjeller i det objektet som returneres i responsen. 
 
-Vær oppmerksom på at også dette endepunktet benytter [paginering](#/parameter/paginering). I responsksemplene er konvolutten med metadata utelatt.
+Vær oppmerksom på at også dette endepunktet benytter [paginering](../parameter/paginering.md). I responsksemplene er konvolutten med metadata utelatt.
 
 Områdefilter og egenskapsfilter er _ikke_ støttet for dette endepunktet.
 

@@ -47,7 +47,7 @@ Alle endepunkt støtter følgende parametere.
 | Navn | Verdi | Beskrivelse |
 |:--------|:-------:|--------:|
 inkluder | kartutsnitt, senterpunkt, vegobjekt, alle | En kommaseparert liste over informasjonselementer man vil hente ut for objektet. Det er ikke mulig å velge kartutsnitt eller senterpunkt for riksvegrute, kontraktsområde eller vegavdeling. |
-srid | [srid](#/verdi/geometri) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
+srid | [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem geometrien skal returneres i. **Default: 32633** |
 
 ## Hent regioner
 

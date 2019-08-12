@@ -181,7 +181,7 @@ For å angi et unikt punkt ved å bruke vegreferanse, må derfor fylkes- og komm
 
 Eksempel: `5000Ev6hp1m2024`
 
-Endepunktet [/veg](#/get/veg) støtter kun vegreferanser som angis på denne måten.
+Endepunktet [/veg](../endepunkt/veg.md) støtter kun vegreferanser som angis på denne måten.
 
 
 ## Mer informasjon

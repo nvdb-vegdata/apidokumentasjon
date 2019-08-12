@@ -9,7 +9,7 @@ Ved hjelp av områdefilter er det mulig å velge hvilke områder det skal søkes
 
 For de fleste parametere skal områdenes _nummer_ angis som verdi.
 
-Alle områder, inkludert navn og nummer, er tilgjengelig i [område-endepunktet](#/get/omrader).
+Alle områder, inkludert navn og nummer, er tilgjengelig i [område-endepunktet](../endepunkt/omrader.md).
 
 ### Region
 
@@ -83,7 +83,7 @@ Velg én eller flere kontraktsområder ved å angi kontraktsområdenes navn.
 
 ### Vegreferanse
 
-Velg én eller flere vegreferanser. Les [dokumentasjonen av vegreferanse](#verdi/vegreferanse) for en oversikt over hvordan en vegreferanse kan formuleres.
+Velg én eller flere vegreferanser. Les [dokumentasjonen av vegreferanse](../verdi/vegreferanse.md) for en oversikt over hvordan en vegreferanse kan formuleres.
 
 ```
 ?vegreferanse=Ev6
@@ -94,7 +94,7 @@ Velg én eller flere vegreferanser. Les [dokumentasjonen av vegreferanse](#verdi
 
 ### Veglenke
 
-Velg én eller flere veglenker. Les [dokumentasjonen av veglenke](#verdi/veglenke) for en oversikt over hvordan en veglenke kan oppgis.
+Velg én eller flere veglenker. Les [dokumentasjonen av veglenke](../verdi/veglenke.md) for en oversikt over hvordan en veglenke kan oppgis.
 
 ```
 ?veglenke=1337
@@ -104,7 +104,7 @@ Velg én eller flere veglenker. Les [dokumentasjonen av veglenke](#verdi/veglenk
 
 ### Kartutsnitt
 
-Velg et rektangulært karutsnitt det skal søkes innenfor. Les [dokumentasjonen av geometri](#verdi/geometri) for en oversikt over hvordan et kartutsnitt kan oppgis.
+Velg et rektangulært karutsnitt det skal søkes innenfor. Les [dokumentasjonen av geometri](../verdi/geometri.md) for en oversikt over hvordan et kartutsnitt kan oppgis.
 
 ```
 ?kartutsnitt=5.159,60.211,5.441,60.333&srid=4326
