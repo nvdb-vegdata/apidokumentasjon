@@ -36,52 +36,50 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker
 {
     "objekter": [
         {
-            "id": 1000,
-            "href": "https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker/1000",
-            "metadata": {
-                "startdato": "1950-01-01"
-            },
-            "fra_posisjon": 0,
-            "til_posisjon": 1,
-            "startnode": "34674-1",
-            "sluttnode": "1272325-1",
-            "felt": "1#2",
-            "medium": "T",
-            "temakode": 7001,
-            "konnekteringslenke": false,
-            "topologinivå": 0,
-            "topologinivå_tekst": "Vegtrasé",
-            "vegsegment": {
-                "geometri": {
-                    "wkt": "LINESTRING Z (147939.8 6514243.8 27.1, 147944.1 6514241.5 27.5, 147948 6514240.6 27.7, 147952.1 6514240.1 27.7, 147956.1 6514239.6 27.6, 147960 6514238.1 27.5, 147963.9 6514236.9 27.2, 147967.6 6514235.4 26.9, 147971.2 6514233.3 26.7)",
-                    "srid": 32633,
-                    "kvalitet": {
-                        "metode": 95,
-                        "nøyaktighet": 200,
-                        "høydenøyaktighet": -1,
-                        "toleranse": -1,
-                        "synlighet": 99,
-                        "datafangstdato": "2001-06-07"
-                    }
-                },
-                "kommune": 914,
-                "fylke": 9,
-                "region": 2,
-                "vegavdeling": 9,
-                "vegreferanse": {
-                    "fylke": 9,
-                    "kommune": 914,
-                    "kategori": "P",
-                    "status": "V",
-                    "nummer": 1031,
-                    "hp": 1,
-                    "fra_meter": 0,
-                    "til_meter": 33,
-                    "kortform": "0914 Pv1031 hp1 m0-33"
-                },
-                "strekningslengde": 33
+        "href" : "https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker/1000",
+        "metadata" : {
+            "startdato" : "2015-08-10"
+        },
+        "veglenkeid" : 1000,
+        "startposisjon" : 0.0,
+        "sluttposisjon" : 0.32765825,
+        "kortform" : "0.0-0.32765825@1000",
+        "felt" : "1#2",
+        "medium" : "T",
+        "temakode" : 7001,
+        "konnekteringslenke" : false,
+        "startnode" : "32041",
+        "sluttnode" : "32067",
+        "geometri" : {
+            "wkt" : "LINESTRING Z (136942.82 6494978.51 13.53, 136946.8 6494980.6 14.3, 136954.1 6494983.3 14.1, 136962.8 6494987.7 12.2, 136965.1 6494989.8 12.1, 136971.9 6494999.7 12.1, 136980.9 6495014.4 11.3, 136983.6 6495017.4 10.6, 136987.2 6495020.1 10.5, 136994.1 6495023.5 10.4, 137000.8 6495024.2 10.4)",
+            "srid" : 32633,
+            "kvalitet" : {
+                "metode" : 22,
+                "nøyaktighet" : 200,
+                "høydenøyaktighet" : -1,
+                "toleranse" : -1,
+                "synlighet" : 99,
+                "datafangstdato" : "1999-05-18"
             }
-        }
+        },
+        "region" : 2,
+        "fylke" : 9,
+        "vegavdeling" : 9,
+        "kommune" : 906,
+        "vegreferanse" : {
+            "fylke" : 9,
+            "kommune" : 906,
+            "kategori" : "K",
+            "status" : "V",
+            "nummer" : 31007,
+            "hp" : 1,
+            "fra_meter" : 0,
+            "til_meter" : 79,
+            "kortform" : "0906 Kv31007 hp1 m0-79"
+        },
+        "strekningslengde" : 78,
+        "typeVeg" : "enkelBilveg"
+    }
     ],
     "metadata": {
         "returnert": 1,
