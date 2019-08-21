@@ -21,7 +21,7 @@ Vegsystem + Strekning:
   * <b>P</b> - Planlagt
   * <b>F</b> - Fiktiv
 - Vegnummer    (Eks:  6)
-- [Trafikantgruppe]: `K` (kjørende) eller `G` (Gående og syklende)
+- [Trafikantgruppe] `K` (kjørende) eller `G` (Gående og syklende)
 - [Strekningsnummer]     (Eks:  S42)
 - [Delstrekningsnummer]  (Eks: D11)
 - [Meterverdi]  eller  [Meterframeter - tilmeter]  (Eks: M0-132)
