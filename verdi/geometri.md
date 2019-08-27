@@ -68,9 +68,9 @@ Parameteren `srid` benyttes for å angi hvilket geografisk referansesystem retur
 </thead>
 <tbody>
 <tr>
-<td>32633</td>
-<td>Tilsvarer koordinatsystemet UTM sone 33N med datum WGS 84.  
-Mer informasjon: <a href="http://spatialreference.org/ref/epsg/wgs-84-utm-zone-33n/">EPSG:32633</a>
+<td>6173</td> 
+<td>Tilsvarer koordinatsystemet UTM sone 33N med datum WGS 84 (EUREF1989UTM33) og høydereferanse NN1954.  
+Mer informasjon: <a href="https://github.com/nvdb-vegdata/utviklerkonferanse-2018/blob/master/doc/epsg6173.md">EPSG:6163</a>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ Mer informasjon: <a href="http://spatialreference.org/ref/epsg/wgs-84/">EPSG:432
 </tr>
 <tr>
 <td>utm33</td>
-<td>Et alias for 32633.</td>
+<td>Et alias for 6173.</td>
 </tr>
 <tr>
 <td>wgs84</td>
