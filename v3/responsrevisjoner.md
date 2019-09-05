@@ -4,6 +4,7 @@
 
 * [Konsekvent bruk av veglenkesekvensid](https://github.com/nvdb-vegdata/nvdb-api-client/commit/3765e42a30728fb4efc023c2f72472a046ec20a2#diff-b5f334c16ceccbb3987030524a0e828cR95). Byttet alle tidligere "veglenkesekvens" med "veglenkesekvensid" der det gjelder id-en
 * [Netelementid og netelementtype på lokasjonsegenskap er endret til veglenkesekvensid](https://github.com/nvdb-vegdata/nvdb-api-client/commit/3765e42a30728fb4efc023c2f72472a046ec20a2#diff-c8692b87f0a2cf670ba98f95c457a46aR123)
+* Lokasjonsegenskap bruker [startposisjon og sluttposisjon](https://github.com/nvdb-vegdata/nvdb-api-client/commit/3765e42a30728fb4efc023c2f72472a046ec20a2#diff-b5f334c16ceccbb3987030524a0e828cR43) i stedet for fra_posisjon og til_posisjon
 * [RelativPosisjon for punkt](https://github.com/nvdb-vegdata/nvdb-api-client/commit/bb4ecee0d488d8cc5f945521a7b1abc45c790709#diff-eab00036a45a9bd9e5ae0f6ef8892c77R22)
 * Egenskaper har fått entydig egenskapstype for enum: Tekstenum, Heltallenum, Flyttallenum: [vegobjekter](https://github.com/nvdb-vegdata/nvdb-api-client/commit/60f0225bfd11c6e1887519f8b35d60b91e2f6e8d#diff-5411560551c353f26c91708d93e16413R19), [vegobjekttyper](https://github.com/nvdb-vegdata/nvdb-api-client/commit/df988953cf19d42ec69d45ff19c0f6f98340b6a8)
 * [Samme feltnavn for egenskap.kvalitet og geometri.kvalitet](https://github.com/nvdb-vegdata/nvdb-api-client/commit/6330a7f9a05864831d12619a96220187f850ee42#diff-6f9ed187bf7b5d1c57ca059ef52bc580R167)
