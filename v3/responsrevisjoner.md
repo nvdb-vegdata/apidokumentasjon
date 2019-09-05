@@ -1,5 +1,8 @@
 # Responsrevisjoner for NVDB API LES V3
 
+### Responsrevisjon 0
+Støtten for responsrevisjon 0 vil bli fjernet ca mars 2020.
+
 ### Responsrevisjon 1
 
 * [Konsekvent bruk av veglenkesekvensid](https://github.com/nvdb-vegdata/nvdb-api-client/commit/3765e42a30728fb4efc023c2f72472a046ec20a2#diff-b5f334c16ceccbb3987030524a0e828cR95). Byttet alle tidligere "veglenkesekvens" med "veglenkesekvensid" der det gjelder id-en
