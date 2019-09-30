@@ -73,7 +73,7 @@ Filtrering på egenskaper i relaterte objekter gjøres også i egenskapsfilteret
 Eksempel på bruk av _relasjon_ i egenskapsfilteret:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000"
+https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000)"
 ```
 
 Her filtreres det på Tunneler (581) som har Tunnelløp (67) med Lengde (1317) over 2 km. API-et finner at tunneler er har en datter relasjon med ID 710 til tunnelløp. Man kan også nøste relasjoner:
