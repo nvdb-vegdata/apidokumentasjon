@@ -7,6 +7,7 @@ Før NVDBIND begynner å lese inn vegnettet legger den alle objekttypene som inn
 
 ![alt text](https://github.com/nvdb-vegdata/apidokumentasjon/blob/master/assets/segmentering.png)
 
-I illustrasjonen over ser vi hvordan vegenke, vegsystem (915)
+I illustrasjonen over ser vi hvordan veglenker, vegsystem(915) og strekning(916)/kryssdel(918)/sideanleggsdel(920)-objekter, kontraktsområder og riksvegruter fører til 5 segmenter med egenskapene som er lista opp i tabellen. I tillegg vises et vegobjekt (fartgrense) Alle vegobjekter segmenteres i sin tur basert på stedfestinga si og vegnettssegmentene. Dette muliggjør de forskjellige filtrene som er tilgjengelige i API Les.
 
-###Metrering
+### Metrering
+Det er...
