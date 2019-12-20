@@ -19,7 +19,7 @@ body {
 
 
 .container {
-  max-width: 65em; 
+  max-width: 65em;
   overflow: auto;
   margin: 5em auto;
   padding: 5em;
@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  width: 17em; 
+  width: 17em;
   margin: 0 3em 0 0;
   float: left;
 }
@@ -48,13 +48,13 @@ main {
     margin-top: 0;
     padding: 2em;
   }
-  
+
   nav {
     float: none;
     width: auto;
     margin-top: 0;
   }
-  
+
   main {
     float: none;
     width: auto;
@@ -260,6 +260,10 @@ th:last-child, td:last-child {
 
 abbr {
   border-bottom: 1px dotted #444;
+}
+
+img {
+    width: 100%
 }
 
 /* Codestyle from https://github.com/jwarby/jekyll-pygments-themes - monokai */
