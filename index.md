@@ -18,11 +18,12 @@ For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvd
 
 ## NVDB API versjon 2
 
-**Versjon 2** er gjeldende versjon av NVDB API, og er dokumentert på dette nettstedet.
+**Versjon 2** vil være støttet til august 2021.
+**Versjon 3** er gjeldende versjon av NVDB API, og er dokumentert [https://nvdbapilesv3.docs.apiary.io](her).
 
 NVDB API v2 er tilgjengelig på følgende adresse:
 
->    [https://www.vegvesen.no/nvdb/api/v2](https://www.vegvesen.no/nvdb/api/v2)
+>    [https://nvdbapiles-v2.atlas.vegvesen.no](https://nvdbapiles-v2.atlas.vegvesen.no)
 
 
 Denne API dokumentasjonen inneholder oversikt over:
