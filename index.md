@@ -16,10 +16,15 @@ For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvd
 4.  Les [Bruk av NVDB API](retningslinjer) for å lære hvordan APIet er ment å brukes.
 5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client){:target="_blank"} som er skrevet som åpen kildekode.
 
+## NVDB API versjon 3
+**Versjon 3** er gjeldende versjon av NVDB API, og er dokumentert [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/](her).
+Det meste vil være veldig likt V2, den største forskjellen er en representasjon av vegnettet som ikke er segmentert.
+
+[Dokumentasjonen finner du her](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/)
+
 ## NVDB API versjon 2
 
 **Versjon 2** vil være støttet til august 2021.
-**Versjon 3** er gjeldende versjon av NVDB API, og er dokumentert [https://nvdbapilesv3.docs.apiary.io](her).
 
 NVDB API v2 er tilgjengelig på følgende adresse:
 
@@ -35,39 +40,4 @@ Denne API dokumentasjonen inneholder oversikt over:
 
 ## NVDB API versjon 1
 
-**Versjon 1** er forrige versjon av APIet. Versjonen er fortsatt tilgjengelig, men vil på sikt utfases. 
-
-**Foreløpig sluttdato for støtte for versjon 1 er 1. juni 2018** 
-
-Det legges ikke til ny funksjonalitet i versjon 1 av APIet, og brukere oppfordres til å gå over til versjon 2 så snart som mulig.
-
-NVDB API v1 er tilgjengelig på følgende adresse:
-
->    [https://www.vegvesen.no/nvdb/api](https://www.vegvesen.no/nvdb/api)
-
-
-*   [Dokumentasjon for NVDB API v1](https://www.vegvesen.no/nvdb/apidokumentasjon/v1)
-
-## NVDB API versjon 3
-Versjon 3 av apiet er under utvikling. 
-Det meste vil være veldig likt V2, den største forskjellen er en representasjon av vegnettet som ikke er segmentert.
-
-[Dokumentasjonen finner du her](https://nvdbapilesv3.docs.apiary.io/)
-
-## Endringslogg
-
-### 2016-06-24
-
-Versjon 2 av NVDB API lanseres. Dette er det viktigste endringene sammenlignet med versjon 1:
-
-*   Endepunktet **/sok** fjernes, og erstattes av **/vegobjekter**.
-*   **/vegobjekter** har fått støtte for område- og egenskapsfilter som tidligere var tilgjengelig for **/sok**.
-*   Område- og egenskapsfilter er nå tilgjengelige som query-parametere, i stedet for at det angis _et_ sammensatt json-objekt som inneholder alle søkekriterier.
-*   **/datakatalog** erstattes av **/vegobjekttyper**.
-*   **/vegreferanse** erstattes av **/posisjon** og **/veg**.
-*   Endepunktet **/endringer** fjernes, og endringer gjøres tilgjengelig som en undertjeneste til hver vegobjekttype.
-*   Det tilbys bedre muligheter for paginering, så en stor respons kan hentes ved å gjennomføre flere spørringer mot APIet.
-*   **/vegobjekter** har støtte for segmentering.
-*   Responsen for **/vegobjekter** kan leveres ut i form av vegsegmenter, der stedfesting, geometri og vegreferanse er koblet sammen.
-*   **/vegnett** leverer veglenker som også inneholder informasjon om vegreferanse.
-*   For **/vegobjekter** finnes det et helt nytt overlappfilter, som kan brukes til å søke frem vegobjekter som befinner seg på samme sted på vegnettet som andre angitte vegobjekttyper.
+Finnes ikke lengre
