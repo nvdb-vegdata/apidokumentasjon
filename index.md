@@ -17,7 +17,7 @@ For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvd
 5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client){:target="_blank"} som er skrevet som åpen kildekode.
 
 ## NVDB API versjon 3
-**Versjon 3** er gjeldende versjon av NVDB API, og er dokumentert [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/](her).
+**Versjon 3** er gjeldende versjon av NVDB API, og er [dokumentert her](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/).
 Det meste vil være veldig likt V2, den største forskjellen er en representasjon av vegnettet som ikke er segmentert.
 
 [Dokumentasjonen finner du her](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/)
