@@ -1,7 +1,7 @@
 ---
 title: Avanserte filtre
 ---
-API-et kan utføre komplekse spørringer som filtrerer på relaterte objekter og objekter som overlapper hverandre. For å spesifisere spørringer med avansert funksjonalitet benyttes et enkelt spørrespråk. Dette spørrespråket er støttet i [https://www.vegvesen.no/nvdb/api/v2/vegobjekter](#/get/vegobjekter) endepunktet.
+API-et kan utføre komplekse spørringer som filtrerer på relaterte objekter og objekter som overlapper hverandre. For å spesifisere spørringer med avansert funksjonalitet benyttes et enkelt spørrespråk. Dette spørrespråket er støttet i [https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter](#/get/vegobjekter) endepunktet.
 
 Avanserte spørringer må brukes dersom man vil utføre spørringer som involverer flere objekttyper. API-et støtter filtrering på objekter som overlapper hverandre:
 
@@ -33,7 +33,7 @@ Her er noen eksempler på bruk av API-et og avansert filtrering. For detaljer og
 _Trafikkulykker med skadegrad "alvorlig skadet" på strekning med fartsgrense 80 km/t_
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/570?egenskap="egenskap(5074)=6429"  
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/570?egenskap="egenskap(5074)=6429"  
 &overlapp=105(egenskap(2021)=2738)"
 ```
 Trafikkulykke har Datakatalog ID 570, egenskapen Skadegrad har egenskap ID 5074 og er av type enum der "Alvorlig skadet" har enum ID 6429\. _egenskapfilter_ filtrerer hovedobjektet (trafikkulykke), mens _overlappfilter_ filtrerer fartsgrense (ID 105) som er lokalisert på samme veglenke som trafikkulykken. Egenskapen fartsgrense har ID 2021 og 2738 er enum ID til 80 km/t.
@@ -41,7 +41,7 @@ Trafikkulykke har Datakatalog ID 570, egenskapen Skadegrad har egenskap ID 5074 
 _Tunneler på fylkesvei med høydebegrensning <4m_
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap=relasjon(67, relasjon(591, egenskap(5277)<4))&vegreferanse="F"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581?egenskap=relasjon(67, relasjon(591, egenskap(5277)<4))&vegreferanse="F"
 ```
 
 Tunneler (581) har Tunnelløp (67) som har en relasjon til Høydebegrensning (591) der egenskap "Skilta høyde" (5277) blir filtrert på mindre enn 4m. _vegreferanse_ filtrerer på fylkesvei (kategori "F").
@@ -51,19 +51,19 @@ Tunneler (581) har Tunnelløp (67) som har en relasjon til Høydebegrensning (59
 Filtrering på egenskaper gjøres ved bruk av funksjonen _egenskap_. Funksjonen tar egenskap ID som parameter og returnerer verdien til egenskapen for objektet. Eksempel på filtrering av bruer bygget etter år 2000:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/60?egenskap="egenskap(10278)>=2000"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/60?egenskap="egenskap(10278)>=2000"
 ```
 
 Man kan også kombinere og filtrere på flere egenskaper ved å bruke operatorene AND og OR:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/60?egenskap="egenskap(10278)>=2000 AND egenskap(1313)<=100"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/60?egenskap="egenskap(10278)>=2000 AND egenskap(1313)<=100"
 ```
 
 Her filtreres bruer etter byggeår (10278) og lengde (1313). Filtrering på egenskaper av type enum må gjøres med enum ID. Man kan f.eks. ikke filtrere Fartsgrense (105) ved å bruke `egenskap(2021)=80`. Man må bruke enum ID:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/105?egenskap="egenskap(2021)>=2738 AND egenskap(1313)<=100"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/105?egenskap="egenskap(2021)>=2738 AND egenskap(1313)<=100"
 ```
 
 ## Filtrering på relasjoner
@@ -73,18 +73,18 @@ Filtrering på egenskaper i relaterte objekter gjøres også i egenskapsfilteret
 Eksempel på bruk av _relasjon_ i egenskapsfilteret:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000)"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000)"
 ```
 
 Her filtreres det på Tunneler (581) som har Tunnelløp (67) med Lengde (1317) over 2 km. API-et finner at tunneler er har en datter relasjon med ID 710 til tunnelløp. Man kan også nøste relasjoner:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, relasjon(591, egenskap(5277)<4))"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581?egenskap="relasjon(67, relasjon(591, egenskap(5277)<4))"
 ```
 Her finner man tunneler med tunnelløp som har Høydebegrensning (591) under 4 meter. Filtrering med relasjoner kan kombineres med filtrering på egenskaper ved å bruke operatoren AND:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000 AND relasjon(591, egenskap(5277)<4))"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581?egenskap="relasjon(67, egenskap(1317)>2000 AND relasjon(591, egenskap(5277)<4))"
 ```
 
 ## Filtrering på objekter som er stedfestet på samme sted (overlapp)
@@ -144,13 +144,13 @@ https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570?egenskap="5074=6429"&overlapp
 _overlapp_ trenger ikke inneholde egenskapsfilter. For å angi at alle objekter som overlapper med hovedobjektet skal returneres uten ytterlige filtrering:
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/571?overlapp="105(egenskap(2021)=2738)"&overlapp=540
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/571?overlapp="105(egenskap(2021)=2738)"&overlapp=540
 ```
 
 
 ## API Parametere
 
-I tillegg til de ordinære API parameterene på [https://www.vegvesen.no/nvdb/api/v2/vegobjekter](../verdi/vegobjekter.md) brukes følgende parameter.
+I tillegg til de ordinære API parameterene på [https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter](../verdi/vegobjekter.md) brukes følgende parameter.
 
 <table>
 <tbody>

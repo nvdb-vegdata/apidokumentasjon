@@ -9,7 +9,7 @@ Vegnettet i NVDB består av en lenke-node-struktur. I APIet er det kun veglenker
 Det er likevel mulig å bygge opp et topologisk vegnettverk, ved å bruke lenkenes `startnode` og `sluttnode`.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegnett
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegnett
 ```
 
 
@@ -19,7 +19,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegnett
 [
     {
         "navn": "Veglenker",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/vegnett/lenker"
     }
 ]
 ```
@@ -28,7 +28,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegnett
 ## Hent veglenker
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegnett/lenker
 ```
 
 
@@ -36,7 +36,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker
 {
     "objekter": [
         {
-        "href" : "https://www.vegvesen.no/nvdb/api/v2/vegnett/lenker/1000",
+        "href" : "https://nvdbapiles-v2.atlas.vegvesen.no/vegnett/lenker/1000",
         "metadata" : {
             "startdato" : "2015-08-10"
         },

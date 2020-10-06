@@ -9,7 +9,7 @@ Tjeneste for å søke etter vegobjekter i Nasjonal vegdatabank.
 ## Hent vegobjekter
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter
 ```
 
 
@@ -35,7 +35,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter
 ## Hent vegobjekter av en gitt vegobjekttype
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/<vegobjekttype.id>/
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/<vegobjekttype.id>/
 ```
 
 
@@ -174,7 +174,7 @@ For å avgrense søkeresultatet, støttes følgende parametere:
 Som standard returneres en liste av vegobjekter. Vegobjektene er innkapslet i en konvolutt, som også inneholder metadata om spørringen. I de andre responseksemplene er konvolutten utelatt.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/45?antall=10
 ```
 
 
@@ -183,11 +183,11 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10
     "vegobjekter": [
         {
             "id": 89204552,
-            "href": "https://www.vegvesen.no/nvdb/api/v2/45/89204552"
+            "href": "https://nvdbapiles-v2.atlas.vegvesen.no/45/89204552"
         },
         {
             "id": 291045342,
-            "href": "https://www.vegvesen.no/nvdb/api/v2/45/291045342"
+            "href": "https://nvdbapiles-v2.atlas.vegvesen.no/45/291045342"
         },
         ...
     ],
@@ -195,7 +195,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10
         "returnert": 10,
         "neste": {
             "start": "Nzk4MTM3Nzc=",
-            "href": "https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?antall=10&start=Nzk4MTM3Nzc="
+            "href": "https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/45?antall=10&start=Nzk4MTM3Nzc="
         }
     }
 }
@@ -207,7 +207,7 @@ Det er satt en grense for hvor mange vegobjekter som kan hentes i samme spørrin
 ### Eksempel: Hent bomstasjoner med metadata og egenskaper
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/45?inkluder=metadata,egenskaper
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/45?inkluder=metadata,egenskaper
 ```
 
 
@@ -269,7 +269,7 @@ Et vegobjekt kan strekke seg over over flere veger og områder. Som standard ret
 Dersom parameteren `segmentering` settes til `false`, returneres alle delene av vegobjektene. Inkludert deler som f.eks. strekker seg utenfor kommunen. Dette er den gamle oppførselen til API v1.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67?kommune=1421&segmentering=false&inkluder=lokasjon
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/67?kommune=1421&segmentering=false&inkluder=lokasjon
 ```
 
 
@@ -288,7 +288,7 @@ APIet støtter segmentering på følgende felter:
 ## Hent statistikk
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/<vegobjekttype_id>/statistikk/
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/<vegobjekttype_id>/statistikk/
 ```
 
 
@@ -308,7 +308,7 @@ Følgende parametere støttes ikke på et statistikkall:
 ### Eksempel: Antall og lengde for tunnelløp
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/statistikk/
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/67/statistikk/
 ```
 
 
@@ -342,14 +342,14 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/statistikk/
 ## Hent et spesifikt vegobjekt
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/<vegobjekttype.id>/<vegobjekt.id>
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/<vegobjekttype.id>/<vegobjekt.id>
 ```
 
 
 Dersom du ikke vet hvilken vegobjekttype et vegobjekt er, kan du bruke hjelperesurssen nedenfor, som videresender deg til korrekt URL.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekt?id=<vegobjektid>
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekt?id=<vegobjektid>
 ```
 
 
@@ -411,14 +411,14 @@ Et kall mot tjenesten returnerer det ønskede objektet med alle informasjonsfelt
 ### Eksempel: Hent et spesifikt tunnelløp
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/67/89204552
 ```
 
 
 ```json
 {
     "id": 89204552,
-    "href": "https://www.vegvesen.no/nvdb/api/v2/vegobjekter/67/89204552",
+    "href": "https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/67/89204552",
     "metadata": {
         "type": {
             "id": 67,
@@ -569,7 +569,7 @@ Det er mulig å spesifisere [geometri-srid](../verdi/geometri.md) for dette ende
 ## Hent egenskaper
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581/79608124/egenskaper
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581/79608124/egenskaper
 ```
 
 
@@ -616,7 +616,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581/79608124/egenskaper
 Det er også mulig å slå opp spesifikk egenskap direkte.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581/79608124/egenskaper/3947
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/581/79608124/egenskaper/3947
 ```
 
 
@@ -642,7 +642,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekter/581/79608124/egenskaper/3947
 Det er mulig å hente ut en liste over vegobjekter som er endret etter en gitt dato.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2//vegobjekter/<vegobjekttype.id>/endringer
+GET https://nvdbapiles-v2.atlas.vegvesen.no//vegobjekter/<vegobjekttype.id>/endringer
 ```
 
 

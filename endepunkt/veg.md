@@ -8,7 +8,7 @@ Denne tjenesten kan brukes til å gjøre et oppslag på veglenkeposisjon eller v
 ## Finn punkt på vegnettet
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg
+GET https://nvdbapiles-v2.atlas.vegvesen.no/veg
 ```
 
 
@@ -25,7 +25,7 @@ srid |  [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem 
 ### Send inn vegreferanse
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg?vegreferanse=5000Ev6hp12m1000
+GET https://nvdbapiles-v2.atlas.vegvesen.no/veg?vegreferanse=5000Ev6hp12m1000
 ```
 
 
@@ -57,7 +57,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/veg?vegreferanse=5000Ev6hp12m1000
 ### Send inn veglenke
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg?veglenke=0.0123456789@1234
+GET https://nvdbapiles-v2.atlas.vegvesen.no/veg?veglenke=0.0123456789@1234
 ```
 
 
@@ -92,7 +92,7 @@ Dersom det ikke er noen treff for vegreferansen eller veglenken er statuskoden `
 Det tilbys et eget batch-endepunkt for å hente flere posisjoner i samme spørring. Det kan sendes inn inntil 1000 posisjoner per spørring. Dersom punktet ikke finnes på vegnettet, returneres `null`.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg/batch
+GET https://nvdbapiles-v2.atlas.vegvesen.no/veg/batch
 ```
 
 
@@ -109,7 +109,7 @@ srid |  [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem 
 ### Eksempel
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/veg/batch?veglenker=0.0123456789@1234,0.1243412@5123,0.0123456789@1234245
+GET https://nvdbapiles-v2.atlas.vegvesen.no/veg/batch?veglenker=0.0123456789@1234,0.1243412@5123,0.0123456789@1234245
 ```
 
 

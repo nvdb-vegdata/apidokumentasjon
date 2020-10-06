@@ -8,7 +8,7 @@ Tjeneste for å vise innholdet i NVDBs metadatakatalog, Datakatalogen.
 ## Hent liste med vegobjekttyper
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper
 ```
 
 
@@ -17,7 +17,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper
 |Navn|Verdi|Beskrivelse|
 |:-|:-|:-|
 |inkluder|egenskapstyper<br>relasjonstyper<br>styringsparametere<br>alle|Angir hvilke informasjonsfelter som skal inkluderes i tillegg til vegobjekttypenes metadata.|
-|kategori|kommaseparerte kategori-id'er|Hent ut vegobjekttyper med de gitte kategoriene. (https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/kategorier) Se: [Hent liste av kategorier](#hent-liste-over-kategorier)|
+|kategori|kommaseparerte kategori-id'er|Hent ut vegobjekttyper med de gitte kategoriene. (https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/kategorier) Se: [Hent liste av kategorier](#hent-liste-over-kategorier)|
 
 ### Respons
 
@@ -79,7 +79,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper
 For å begrense datatrafikk, er det mulig å hente detaljert informasjon om en spesifikk vegobjekttype.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/<vegobjekttype.id>
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/<vegobjekttype.id>
 ```
 
 
@@ -92,7 +92,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/<vegobjekttype.id>
 ### Eksempel: Hent fartsgrense (105)
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/105
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/105
 ```
 
 
@@ -340,7 +340,7 @@ Ved angivelse av `inkluder=styringsparametere` eller `inkluder=alle`, blir følg
 Det er mulig å hente detaljert informasjon om en spesifikk egenskapstype.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/<vegobjekttype.id>/<egenskapstype.id>
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/<vegobjekttype.id>/<egenskapstype.id>
 ```
 
 
@@ -349,7 +349,7 @@ Det vil bli returnert et komplett egenskapstypeobjekt.
 ### Eksempel
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/105/2021;
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/105/2021;
 ```
 
 
@@ -358,7 +358,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/105/2021;
 På dette endepunktet listes alle enhetene fra Datakatalogen.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/enheter
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/enheter
 ```
 
 
@@ -396,7 +396,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/enheter
 På dette endepunktet listes alle mulige datatyper egenskapstypene kan ha.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/datatyper
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/datatyper
 ```
 
 
@@ -438,7 +438,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/datatyper
 På dette endepunktet listes alle kategoriene en vegobjekttype kan være i.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/vegobjekttyper/kategorier
+GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekttyper/kategorier
 ```
 
 ```json

@@ -49,7 +49,7 @@ Et vegobjekt har en unik id, en unik url, og er av en bestemt vegobjekttype.
 ```json
 {
     "id": 79632559,
-    "href": "https://www.vegvesen.no/nvdb/api/v2/45/79632559",
+    "href": "https://nvdbapiles-v2.atlas.vegvesen.no/45/79632559",
     "type": {
         "id": 45,
         "navn": "Bomstasjon"

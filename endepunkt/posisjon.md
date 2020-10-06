@@ -8,7 +8,7 @@ Tjeneste for å finne nærmeste veg til en gitt koordinat.
 ## Finn posisjon
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon
+GET https://nvdbapiles-v2.atlas.vegvesen.no/posisjon
 ```
 
 ### Parametere
@@ -33,7 +33,7 @@ Feltet `avstand` i responsen angir hvor mange meter det er mellom innsendt punkt
 ### Eksempel
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815
+GET https://nvdbapiles-v2.atlas.vegvesen.no/posisjon?nord=7038165&ost=269815
 ```
 
 ```json
@@ -66,7 +66,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815
 ### Eksempel: Inkluder konnekteringslenker
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815&konnekteringslenker=true
+GET https://nvdbapiles-v2.atlas.vegvesen.no/posisjon?nord=7038165&ost=269815&konnekteringslenker=true
 ```
 
 ```json
@@ -99,7 +99,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/posisjon?nord=7038165&ost=269815&konnekt
 ### Eksempel: Angivelse av maks antall og maks avstand
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/posisjon?lat=63.415855&lon=10.395287&maks_avstand=100&maks_antall=10
+GET https://nvdbapiles-v2.atlas.vegvesen.no/posisjon?lat=63.415855&lon=10.395287&maks_avstand=100&maks_antall=10
 ```
 
 ```json

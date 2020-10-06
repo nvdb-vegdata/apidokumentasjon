@@ -10,11 +10,11 @@ For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvd
 
 ## Tips for å komme raskt igang
 
-1.  Besøk [Vegkart](https://www.vegvesen.no/vegkart/vegkart){:target="_blank"} for å få innblikk i hvilke data som er tilgjengelig.
+1.  Besøk [Vegkart](https://vegkart-2019.atlas.vegvesen.no){:target="_blank"} for å få innblikk i hvilke data som er tilgjengelig.
 2.  Les [Om Nasjonal vegdatabank](om_nvdb) for å bli kjent med NVDBs datastruktur.
 3.  Utforsk endepunktene i APIet gjennom nettleseren, og bli motivert til å fortsette.
 4.  Les [Bruk av NVDB API](retningslinjer) for å lære hvordan APIet er ment å brukes.
-5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client){:target="_blank"} som er skrevet som åpen kildekode.
+5.  Om du skriver i Java, kan du bruke bruke [NVDB API Client](https://github.com/nvdb-vegdata/nvdb-api-client/tree/V2){:target="_blank"} som er skrevet som åpen kildekode.
 
 ## NVDB API versjon 3
 **Versjon 3** er gjeldende versjon av NVDB API, og er [dokumentert her](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon/).

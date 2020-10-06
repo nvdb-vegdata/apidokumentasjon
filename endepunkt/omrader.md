@@ -8,34 +8,34 @@ I NVDB er vegobjekter og vegnett stedfestet til flere typer områder, som kan br
 ## Hent områder
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader
 ```
 
 ```json
 [
     {
         "navn": "Regioner",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/regioner"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/regioner"
     },
     {
         "navn": "Fylker",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/fylker"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/fylker"
     },
     {
         "navn": "Vegavdelinger",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/vegavdelinger"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/vegavdelinger"
     },
     {
         "navn": "Kommuner",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/kommuner"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/kommuner"
     },
     {
         "navn": "Riksvegruter",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/riksvegruter"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/riksvegruter"
     },
     {
         "navn": "Kontraktsområder",
-        "href": "https://www.vegvesen.no/nvdb/api/v2/omrader/kontraktsomrader"
+        "href": "https://nvdbapiles-v2.atlas.vegvesen.no/omrader/kontraktsomrader"
     }
 ]
 ```
@@ -54,7 +54,7 @@ srid | [srid](../verdi/geometri.md) | Angir hvilket geografisk referansesystem g
 Regioner er en områdetype som benyttes internt i Statens vegvesen, for å organisere vegavdelingene i større organistoriske enheter.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/regioner
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/regioner
 ```
 
 ```json
@@ -87,7 +87,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/regioner
 Fylkene tilsvarer Norges 19 fylker. Feltet `region` er lagt til for å gjøre koblingen mellom region og fylke enklere.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/fylker
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/fylker
 ```
 
 ```json
@@ -115,7 +115,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/fylker
 ### Eksempel: Hent flere informasjonselementer
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/fylker?inkluder=kartutsnitt,vegobjekt
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/fylker?inkluder=kartutsnitt,vegobjekt
 ```
 
 ```json
@@ -171,7 +171,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/fylker?inkluder=kartutsnitt,vego
 Vegavdelingene tilsvarer Norges fylker, bortsett fra ett unntak: Nordland og Troms er delt inn i treavdelinger, hvor den ene befinner seg både i Nordland fylke og Troms fylke.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/vegavdelinger
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/vegavdelinger
 ```
 
 ```json
@@ -206,7 +206,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/vegavdelinger
 Kommunene tilsvarer Norges kommuner.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/kommuner
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/kommuner
 ```
 
 ```
@@ -241,7 +241,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/kommuner
 Et kontraktsområde er en samling av veger hvor en gitt entreprenør har ansvar for drift/vedlikehold.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/kontraktsomrader
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/kontraktsomrader
 ```
 
 ```json
@@ -271,7 +271,7 @@ GET https://www.vegvesen.no/nvdb/api/v2/omrader/kontraktsomrader
 En riksvegrute er en strekning som benyttes i forbindelse med Nasjonal Transportplan.
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/omrader/riksvegruter
+GET https://nvdbapiles-v2.atlas.vegvesen.no/omrader/riksvegruter
 ```
 
 ```json

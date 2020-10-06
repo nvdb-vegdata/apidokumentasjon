@@ -8,7 +8,7 @@ Tjeneste for å hente ulike statusparametere om APIet.
 ## Hent status
 
 ```
-GET https://www.vegvesen.no/nvdb/api/v2/status
+GET https://nvdbapiles-v2.atlas.vegvesen.no/status
 ```
 
 ```json

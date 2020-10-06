@@ -123,7 +123,7 @@ https:/www.vegvesen.no/nvdb/api/v2/vegobjekter/570/statistikk?egenskap="5055>'20
 Egenskapsfilteret støtter også filtrering på klokkeslett som heltall.
 
 ```
-https://www.vegvesen.no/nvdb/api/v2/vegobjekter/570/statistikk?egenskap="5056=1200"
+https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter/570/statistikk?egenskap="5056=1200"
 ```
 
 
