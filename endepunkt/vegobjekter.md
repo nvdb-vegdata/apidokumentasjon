@@ -3,10 +3,12 @@ title: Vegobjekter
 category: endepunkt
 ---
 
+# Oppdatert API-dokumentasjon for versjon 3
+Bruk heller dokumentasjon for versjon 3 av NVDB api https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon
 
-Tjeneste for å søke etter vegobjekter i Nasjonal vegdatabank.
+De sidene du besøker akkurat kan fungere godt for å få et overblikk over NVDB datamodell, men er utdatert på en del tekniske detaljer.
 
-## Hent vegobjekter
+## Gammel dokumentasjon - Hent vegobjekter
 
 ```
 GET https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter
