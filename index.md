@@ -9,6 +9,8 @@ API-dokumentasjon for gjeldende versjon 3 finnes her: [https://nvdbapiles-v3.atl
 
 Status på våre tjenester finnes her: [https://nvdbstatus.atlas.vegvesen.no/](https://nvdbstatus.atlas.vegvesen.no/) 
 
+## Vi anbefaler alle å [oppsøke dokumentasjonen for versjon 3](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
+
 Statens vegvesen tilbyr et REST-basert API som kan benyttes for å få tilgang til informasjonen som befinner seg i Nasjonal vegdatabank (NVDB).
 
 For kontakt med utviklerne av dette APIet gå til [Gitter](https://gitter.im/nvdb-vegdata/api-les-v3)
