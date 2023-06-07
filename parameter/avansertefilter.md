@@ -1,6 +1,15 @@
 ---
 title: Avanserte filtre
 ---
+
+# Oppdatert API-dokumentasjon for versjon 3
+Bruk heller dokumentasjon for versjon 3 av NVDB api [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
+
+De sidene du besøker akkurat kan fungere godt for å få et overblikk over NVDB datamodell, men er utdatert på en del tekniske detaljer.
+
+## Gammel dokumentasjon
+
+
 API-et kan utføre komplekse spørringer som filtrerer på relaterte objekter og objekter som overlapper hverandre. For å spesifisere spørringer med avansert funksjonalitet benyttes et enkelt spørrespråk. Dette spørrespråket er støttet i [https://nvdbapiles-v2.atlas.vegvesen.no/vegobjekter](#/get/vegobjekter) endepunktet.
 
 Avanserte spørringer må brukes dersom man vil utføre spørringer som involverer flere objekttyper. API-et støtter filtrering på objekter som overlapper hverandre:
