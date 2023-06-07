@@ -3,6 +3,15 @@ title: Om NVDB
 order: 1
 ---
 
+# Oppdatert API-dokumentasjon for versjon 3
+
+Bruk heller dokumentasjon for versjon 3 av NVDB api
+[https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
+
+De sidene du besøker akkurat kan fungere godt for å få et overblikk over NVDB datamodell, men er utdatert på en del tekniske detaljer. 
+
+## Gammel dokumentasjon
+
 For å kunne ta i bruk NVDB API på en effektiv måte, er det en fordel å ha kunnskap om hvordan NVDBs datamodell er bygd opp.
 
 ## Innhold i NVDB
