@@ -5,9 +5,9 @@ order: 0
 
 # Oppdatert API-dokumentasjon
 
-API-dokumentasjon for gjeldende versjon 3 finnes her: https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon 
+API-dokumentasjon for gjeldende versjon 3 finnes her: [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
 
-Status på våre tjenester finnes her: https://nvdbstatus.atlas.vegvesen.no/ 
+Status på våre tjenester finnes her: [https://nvdbstatus.atlas.vegvesen.no/](https://nvdbstatus.atlas.vegvesen.no/) 
 
 Statens vegvesen tilbyr et REST-basert API som kan benyttes for å få tilgang til informasjonen som befinner seg i Nasjonal vegdatabank (NVDB).
 
