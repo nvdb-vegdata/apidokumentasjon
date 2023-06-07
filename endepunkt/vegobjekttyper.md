@@ -2,6 +2,12 @@
 title: Vegobjekttyper
 category: endepunkt
 ---
+# Oppdatert API-dokumentasjon for versjon 3
+Bruk heller dokumentasjon for versjon 3 av NVDB api https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon
+
+De sidene du besøker akkurat kan fungere godt for å få et overblikk over NVDB datamodell, men er utdatert på en del tekniske detaljer.
+
+## Gammel dokumentasjon
 
 Tjeneste for å vise innholdet i NVDBs metadatakatalog, Datakatalogen.
 
