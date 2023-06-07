@@ -3,6 +3,13 @@ title: Paginering
 category: Parameter
 ---
 
+# Oppdatert API-dokumentasjon for versjon 3
+Bruk heller dokumentasjon for versjon 3 av NVDB api [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
+
+De sidene du besøker akkurat kan fungere godt for å få et overblikk over NVDB datamodell, men er utdatert på en del tekniske detaljer.
+
+## Gammel dokumentasjon
+
 Spørringer mot NVDB API kan potensielt returnere et stort antall objekter. For å begrense belastningen på APIet, og samtidig unngå store responser, legges det opp til at brukere benytter paginering til å laste ned store resultatsett.
 
 ## Parametere
