@@ -7,7 +7,7 @@ order: 0
 
 API-dokumentasjon for gjeldende versjon 3 finnes her: [https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
 
-Status på våre tjenester finnes her: [https://nvdbstatus.atlas.vegvesen.no/](https://nvdbstatus.atlas.vegvesen.no/) 
+Driftstatus på våre tjenester finnes her: [https://nvdbstatus.atlas.vegvesen.no/](https://nvdbstatus.atlas.vegvesen.no/) 
 
 ## Vi anbefaler alle å [oppsøke dokumentasjonen for versjon 3](https://nvdbapiles-v3.atlas.vegvesen.no/dokumentasjon)
 
